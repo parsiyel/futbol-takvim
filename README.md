@@ -33,11 +33,22 @@ matches:                # tek maç, sıra önemsiz
 rules:
   sl_derbies: true      # SL: 4 büyük birbirleriyle
   pl_big6: true         # PL: Big 6 birbirleriyle
-  cl_from_qf: true      # ŞL: çeyrek final ve sonrası
-  cl_tr_teams: true     # ŞL: Türk takımları
-  cl_trt: true          # ŞL: TRT'de yayınlanan maç
+  eu_from_qf: true      # ŞL/AL/Konferans: çeyrek final ve sonrası
+  eu_tr_teams: true     # Avrupa'da Türk takımları
+  eu_trt: true          # TRT 1'de yayınlanan maç
 alerts_minutes: [60, 15]
+
+# Feed'lerde olmayan maçlar (Avrupa eleme/play-off turları). Saat TR. Hepsi alarmlı.
+manual:
+  - date: "2026-08-20 20:00"
+    home: Beşiktaş
+    away: Kauno Žalgiris
+    note: "Avrupa Ligi Play-off, ilk maç"
+    channel: TRT 1
 ```
+
+Feed'ler yalnızca ana aşamaları içerir (ŞL/AL/Konferans lig aşaması + eleme
+sonrası). **Eleme ve play-off turları hiçbir feed'de yok** → `manual:` ile gir.
 
 Kısaltmalar çalışır: `man city`, `man utd`, `spurs`, `bjk`, `fb`, `gs`, `ts`.
 Dosyayı GitHub uygulamasından düzenleyip push edince takvim ~2 dk içinde yenilenir.

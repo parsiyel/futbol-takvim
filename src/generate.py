@@ -2,7 +2,7 @@ import logging, os, sys
 from pathlib import Path
 from src import config, fetch
 from src.ics import build_calendar
-from src.model import Match, parse_feed
+from src.model import Match, parse_feed, parse_manual
 from src.rules import Watchlist, is_selected, is_team
 
 log = logging.getLogger(__name__)
@@ -16,8 +16,10 @@ def _same_pair(m: Match, pair: tuple[str, str]) -> bool:
 
 def assign_channels(matches: list[Match], trt_pairs: set[tuple[str, str]]) -> None:
     for m in matches:
+        if m.league == "MANUAL":
+            continue                      # kanal yaml'dan geldi
         m.channel = config.CHANNELS[m.league]
-        if m.league == "CL" and any(_same_pair(m, p) for p in trt_pairs):
+        if m.league in config.EUROPE and any(_same_pair(m, p) for p in trt_pairs):
             m.channel = config.TRT_CHANNEL
 
 def split(matches: list[Match]) -> tuple[list[Match], list[Match]]:
@@ -31,6 +33,7 @@ def run(out_dir, watchlist_path: str, suffix: str) -> None:
         data = fetch.fetch_feed(league)
         if data is not None:
             matches += parse_feed(data, league)
+    matches += parse_manual(wl.manual)
     assign_channels(matches, fetch.trt_cl_pairs())
     matches.sort(key=lambda m: m.start)
     bjk, futbol = split(matches)

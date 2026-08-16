@@ -2,9 +2,22 @@ teams:
   - Beşiktaş
 matches: []          # örnek: "Arsenal-Manchester City"
 rules:
-  sl_derbies: true
-  pl_big6: true
-  cl_from_qf: true
-  cl_tr_teams: true
-  cl_trt: true
+  sl_derbies: true   # SL: Beşiktaş/FB/GS/TS birbirleriyle
+  pl_big6: true      # PL: Big 6 birbirleriyle
+  eu_from_qf: true   # ŞL/AL/Konferans: çeyrek final ve sonrası
+  eu_tr_teams: true  # Avrupa'da Türk takımları
+  eu_trt: true       # TRT 1'de yayınlanan maç
 alerts_minutes: [60, 15]
+
+# Feed'lerde olmayan maçlar (Avrupa eleme turları vb.). Saat Türkiye saati. Hepsi alarmlı.
+manual:
+  - date: "2026-08-20 20:00"
+    home: Beşiktaş
+    away: Kauno Žalgiris
+    note: "Avrupa Ligi Play-off, ilk maç (Tüpraş)"
+    channel: "TRT 1 / S Sport Plus (teyit edilmedi)"
+  - date: "2026-08-27 20:00"
+    home: Kauno Žalgiris
+    away: Beşiktaş
+    note: "Avrupa Ligi Play-off, rövanş (Kaunas) — saat teyit edilmedi"
+    channel: "teyit edilmedi"

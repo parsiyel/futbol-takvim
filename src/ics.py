@@ -7,9 +7,14 @@ from src.model import Match
 TZ = ZoneInfo("Europe/Istanbul")
 
 def _round_label(m: Match) -> str:
-    if m.league == "CL":
-        return config.CL_ROUND_LABELS.get(m.round, f"Lig Aşaması {m.round}. Hafta")
+    if m.league in config.EUROPE:
+        return config.ROUND_LABELS[m.league].get(m.round, f"Lig Aşaması {m.round}. Hafta")
     return f"{m.round}. Hafta"
+
+def _description(m: Match) -> str:
+    if m.league == "MANUAL":
+        return f"{m.note} · {m.channel}" if m.note else m.channel
+    return f"{config.LEAGUE_NAMES[m.league]} · {_round_label(m)} · {m.channel}"
 
 def build_calendar(name: str, items: list[tuple[Match, bool]], alerts: list[int]) -> Calendar:
     cal = Calendar()
@@ -28,10 +33,10 @@ def build_calendar(name: str, items: list[tuple[Match, bool]], alerts: list[int]
         ev.add("dtend", start + timedelta(hours=2))
         ev.add("dtstamp", start)
         ev.add("location", m.channel)
-        desc = f"{config.LEAGUE_NAMES[m.league]} · {_round_label(m)} · {m.channel}"
+        desc = _description(m)
         if m.finished and m.score:
             desc += f"\nSkor: {m.score}"
-        if start.hour == 0 and start.minute == 0:   # feed placeholder: saat açıklanmamış
+        if m.league != "MANUAL" and start.hour == 0 and start.minute == 0:   # feed placeholder: saat açıklanmamış
             desc += "\n⚠️ Saat henüz kesinleşmedi"
         ev.add("description", desc)
         if selected:

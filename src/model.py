@@ -12,7 +12,8 @@ class Match:
     round: int
     finished: bool
     score: str | None
-    channel: str = ""    # generate.py doldurur
+    channel: str = ""    # generate.py doldurur (MANUAL: yaml'dan)
+    note: str = ""       # MANUAL: serbest açıklama ("Avrupa Ligi 3. Eleme Turu")
 
     @property
     def home_n(self) -> str: return normalize(self.home)
@@ -26,6 +27,19 @@ def normalize(name: str) -> str:
     s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c))
     return s.lower().strip()
+
+def parse_manual(items: list[dict]) -> list[Match]:
+    """watchlist.yml `manual:` girdileri. Saat Türkiye saati (Europe/Istanbul).
+    {date: "2026-08-20 21:00", home: Beşiktaş, away: X, note: "...", channel: "tabii"}"""
+    from zoneinfo import ZoneInfo
+    tz = ZoneInfo("Europe/Istanbul")
+    out = []
+    for i, it in enumerate(items, start=1):
+        start = datetime.strptime(str(it["date"]), "%Y-%m-%d %H:%M").replace(tzinfo=tz).astimezone(timezone.utc)
+        out.append(Match(id=i, league="MANUAL", home=it["home"], away=it["away"], start=start,
+                         round=0, finished=False, score=None,
+                         channel=str(it.get("channel", "")), note=str(it.get("note", ""))))
+    return out
 
 def parse_feed(items: list[dict], league: str) -> list[Match]:
     """fixturedownload.com JSON feed -> Match listesi."""

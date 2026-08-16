@@ -6,7 +6,7 @@ def m(home, away, league="SL", round=1, channel=""):
     return Match(1, league, home, away, datetime(2026, 9, 1, tzinfo=timezone.utc), round, False, None, channel)
 
 WL = Watchlist(teams=["Beşiktaş", "manchester city"], matches=["Arsenal-Liverpool"],
-               rules={"sl_derbies": True, "pl_big6": True, "cl_from_qf": True, "cl_tr_teams": True, "cl_trt": True},
+               rules={"sl_derbies": True, "pl_big6": True, "eu_from_qf": True, "eu_tr_teams": True, "eu_trt": True},
                alerts_minutes=[60, 15])
 
 def test_is_team_alias_and_accent():
@@ -33,11 +33,23 @@ def test_pl_big6_only_between_big6():
     assert is_selected(m("Chelsea", "Man Utd", "PL"), WL)
     assert not is_selected(m("Chelsea", "Burnley", "PL"), WL)
 
-def test_cl_rules():
+def test_eu_rules():
     assert is_selected(m("Real Madrid", "Bayern München", "CL", 13), WL)
     assert not is_selected(m("Real Madrid", "Bayern München", "CL", 3), WL)
     assert is_selected(m("Galatasaray", "Bayern München", "CL", 3), WL)
     assert is_selected(m("Real Madrid", "Bayern München", "CL", 3, channel="TRT 1"), WL)
+    assert is_selected(m("Roma", "Lyon", "EL", 13), WL)
+    assert is_selected(m("Roma", "Lyon", "UECL", 11), WL)      # Konferans çeyrek = tur 11
+    assert not is_selected(m("Roma", "Lyon", "UECL", 10), WL)
+
+def test_manual_always_selected():
+    off = Watchlist()
+    assert is_selected(m("Beşiktaş", "X", "MANUAL", 0), off)
+
+def test_load_yaml_manual(tmp_path):
+    p = tmp_path / "w.yml"
+    p.write_text('manual:\n  - {date: "2026-08-20 21:00", home: Beşiktaş, away: X}\n', encoding="utf-8")
+    assert Watchlist.load(p).manual[0]["home"] == "Beşiktaş"
 
 def test_rules_off():
     off = Watchlist(teams=[], matches=[], rules={}, alerts_minutes=[60])

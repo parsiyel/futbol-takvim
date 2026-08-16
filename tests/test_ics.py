@@ -35,6 +35,10 @@ def test_midnight_placeholder_flagged():
     assert "Saat henüz kesinleşmedi" in text.replace("\r\n ", "")   # 75-oktet katlamayı aç
     assert "kesinleşmedi" not in build_calendar("F", [(m(), False)], alerts=[]).to_ical().decode()
 
+def test_manual_description():
+    text = build_calendar("F", [(m(league="MANUAL", round=0, channel="tabii", note="AL Play-off"), True)], alerts=[60]).to_ical().decode()
+    assert "DESCRIPTION:AL Play-off · tabii" in text and "BEGIN:VALARM" in text
+
 def test_cl_round_labels():
     text = build_calendar("F", [(m(league="CL", round=13, channel="tabii"), False)], alerts=[]).to_ical().decode()
     assert "Şampiyonlar Ligi · Çeyrek Final · tabii" in text

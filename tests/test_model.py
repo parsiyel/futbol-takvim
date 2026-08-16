@@ -8,6 +8,14 @@ def test_normalize_strips_accents_and_case():
     assert normalize("Kasımpaşa") == "kasimpasa"
     assert normalize("Gençlerbirligi") == "genclerbirligi"
 
+def test_parse_manual():
+    from src.model import parse_manual
+    ms = parse_manual([{"date": "2026-08-20 21:00", "home": "Beşiktaş", "away": "Lyon", "note": "AL Play-off", "channel": "tabii"}])
+    m = ms[0]
+    assert m.league == "MANUAL" and m.uid == "MANUAL-1@futbol-takvim"
+    assert m.start.isoformat() == "2026-08-20T18:00:00+00:00"   # TR 21:00 = UTC 18:00
+    assert m.note == "AL Play-off" and m.channel == "tabii"
+
 def test_parse_feed():
     data = json.load(open("tests/fixtures/sl_sample.json", encoding="utf-8"))
     matches = parse_feed(data, "SL")

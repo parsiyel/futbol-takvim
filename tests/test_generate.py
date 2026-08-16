@@ -24,9 +24,12 @@ def test_split_calendars():
 
 def test_run_writes_files_and_skips_missing_cl(tmp_path, monkeypatch):
     sample = json.load(open("tests/fixtures/sl_sample.json", encoding="utf-8"))
-    monkeypatch.setattr(generate.fetch, "fetch_feed", lambda league: None if league == "CL" else sample)
+    monkeypatch.setattr(generate.fetch, "fetch_feed", lambda league: sample if league in ("SL", "PL") else None)
     monkeypatch.setattr(generate.fetch, "trt_cl_pairs", lambda: set())
-    generate.run(out_dir=tmp_path, watchlist_path="watchlist.yml", suffix="test")
+    wl = tmp_path / "w.yml"
+    wl.write_text('teams: [Beşiktaş]\nmanual:\n  - {date: "2026-08-20 21:00", home: Beşiktaş, away: Lyon, note: "AL", channel: tabii}\n', encoding="utf-8")
+    generate.run(out_dir=tmp_path, watchlist_path=wl, suffix="test")
     bjk = (tmp_path / "besiktas-test.ics").read_text(encoding="utf-8")
     assert "BEGIN:VALARM" in bjk and "UID:SL-3@futbol-takvim" in bjk
+    assert "UID:MANUAL-1@futbol-takvim" in bjk and "LOCATION:tabii" in bjk
     assert (tmp_path / "futbol-test.ics").exists()
