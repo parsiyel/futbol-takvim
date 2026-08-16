@@ -1,10 +1,11 @@
 import logging, re
-import requests
+import requests, urllib3
 from src import config
 from src.model import normalize
 
 log = logging.getLogger(__name__)
-UA = {"User-Agent": "Mozilla/5.0 (futbol-takvim)"}
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)   # sadece TFF için verify=False
+UA ={"User-Agent": "Mozilla/5.0 (futbol-takvim)"}
 
 class FetchError(Exception): ...
 
@@ -21,6 +22,23 @@ def fetch_feed(league: str) -> list[dict] | None:
     if not data:
         raise FetchError(f"{league}: boş feed")
     return data
+
+TFF_URL = "https://www.tff.org/Default.aspx?pageID=198&hafta={week}"
+TFF_WEEKS = 34
+
+def fetch_tff() -> list["Match"]:
+    """Süper Lig'i TFF resmi sitesinden hafta hafta çeker (saatler fixturedownload'dan önce burada güncellenir)."""
+    from src.model import parse_tff_week
+    matches = []
+    for week in range(1, TFF_WEEKS + 1):
+        # tff.org ara sertifikayı göndermiyor → Python doğrulaması düşüyor. Veri açık/hassas değil.
+        r = requests.get(TFF_URL.format(week=week), headers=UA, timeout=30, verify=False)
+        r.raise_for_status()
+        wk = parse_tff_week(r.text, week)
+        if not wk:
+            raise FetchError(f"TFF hafta {week}: maç bulunamadı (sayfa yapısı değişmiş olabilir)")
+        matches += wk
+    return matches
 
 # TRT 1 yayın akışı sayfası EPG'yi gömülü JSON olarak taşır:
 #   "title":"Fenerbahçe - Lyon | UEFA Şampiyonlar Ligi Play Off Maçı"

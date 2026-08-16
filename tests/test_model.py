@@ -8,6 +8,28 @@ def test_normalize_strips_accents_and_case():
     assert normalize("Kasımpaşa") == "kasimpasa"
     assert normalize("Gençlerbirligi") == "genclerbirligi"
 
+def test_tff_team_name():
+    from src.model import tff_team_name
+    assert tff_team_name("BEŞİKTAŞ A.Ş.") == "Beşiktaş"
+    assert tff_team_name("CORENDON ALANYASPOR") == "Alanyaspor"
+    assert tff_team_name("İSTANBUL BAŞAKŞEHİR FK") == "İstanbul Başakşehir"
+    assert tff_team_name("ARCA ÇORUM FK") == "Çorum"
+
+def test_parse_tff_week():
+    from src.model import parse_tff_week
+    ms = parse_tff_week(open("tests/fixtures/tff_week2.html", encoding="utf-8").read(), 2)
+    assert [m.id for m in ms] == [317801, 317796]
+    m = ms[0]
+    assert m.league == "SL" and m.round == 2 and m.uid == "SL-317801@futbol-takvim"
+    assert m.home == "Erzurumspor" and m.away == "Galatasaray"
+    assert m.start.isoformat() == "2026-08-21T18:30:00+00:00"    # 21:30 TR
+    assert not m.finished
+
+def test_parse_tff_week_without_time_is_midnight():
+    from src.model import parse_tff_week
+    ms = parse_tff_week(open("tests/fixtures/tff_week5.html", encoding="utf-8").read(), 5)
+    assert ms[0].start.isoformat() == "2026-09-12T21:00:00+00:00"  # 13.09 00:00 TR placeholder
+
 def test_parse_manual():
     from src.model import parse_manual
     ms = parse_manual([{"date": "2026-08-20 21:00", "home": "Beşiktaş", "away": "Lyon", "note": "AL Play-off", "channel": "tabii"}])

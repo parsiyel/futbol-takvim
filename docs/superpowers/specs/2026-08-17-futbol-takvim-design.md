@@ -63,6 +63,25 @@ göre. ŞL tur numaraları: 1-8 lig aşaması, 9-10 play-off, 11-12 son 16, 13-1
 
 **Türkiye Kupası kapsamdan çıkarıldı** — ücretsiz kaynak yok.
 
+**Güncelleme 2 (2026-08-17 akşam):** fixturedownload Süper Lig saatlerini geç
+güncelliyor (TFF 8 Ağustos'ta açıkladığı 2-3. hafta saatleri 9 gün sonra hâlâ
+placeholder). Süper Lig için birincil kaynak **TFF resmi sitesi** oldu:
+`https://www.tff.org/Default.aspx?pageID=198&hafta={1..34}` — hafta başına bir
+sayfa, `lblTarih`/`lblSaat`/`Label4`(ev)/`Label1`(dep)/`Label5-6`(skor)/`macId`.
+Saat boşsa 00:00 TR placeholder. Takım adları sponsor/A.Ş./FK temizlenip Türkçe
+title-case (`tff_team_name`). UID `SL-{macId}`. tff.org ara sertifika
+göndermediği için bu istekte `verify=False`. TFF okunamazsa fixturedownload
+feed'ine düşülür (UID'ler farklı olduğundan geçici olarak takvim yenilenir).
+
+Avrupa Ligi (`europa-league-2026`) ve Konferans Ligi (`conference-league-2026`)
+opsiyonel feed olarak eklendi. Feed'lerde eleme/play-off turları yok →
+`watchlist.yml` `manual:` girdileri (tarih TR saati, ev, dep, not, kanal) her
+zaman alarmlı olarak Beşiktaş takvimine girer. Kural adları `eu_from_qf`,
+`eu_tr_teams`, `eu_trt` (üç Avrupa kupası). Konferans çeyrek final = tur 11.
+
+Beşiktaş maçları yalnızca `besiktas.ics`'te; `futbol.ics` geri kalanı içerir
+(çift kayıt olmasın).
+
 ### Kanal bilgisi
 
 API'de yok, kural ile eklenir:

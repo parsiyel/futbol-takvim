@@ -24,7 +24,9 @@ def test_split_calendars():
 
 def test_run_writes_files_and_skips_missing_cl(tmp_path, monkeypatch):
     sample = json.load(open("tests/fixtures/sl_sample.json", encoding="utf-8"))
-    monkeypatch.setattr(generate.fetch, "fetch_feed", lambda league: sample if league in ("SL", "PL") else None)
+    from src.model import parse_feed
+    monkeypatch.setattr(generate.fetch, "fetch_tff", lambda: parse_feed(sample, "SL"))
+    monkeypatch.setattr(generate.fetch, "fetch_feed", lambda league: sample if league == "PL" else None)
     monkeypatch.setattr(generate.fetch, "trt_cl_pairs", lambda: set())
     wl = tmp_path / "w.yml"
     wl.write_text('teams: [Beşiktaş]\nmanual:\n  - {date: "2026-08-20 21:00", home: Beşiktaş, away: Lyon, note: "AL", channel: tabii}\n', encoding="utf-8")
@@ -33,3 +35,10 @@ def test_run_writes_files_and_skips_missing_cl(tmp_path, monkeypatch):
     assert "BEGIN:VALARM" in bjk and "UID:SL-3@futbol-takvim" in bjk
     assert "UID:MANUAL-1@futbol-takvim" in bjk and "LOCATION:tabii" in bjk
     assert (tmp_path / "futbol-test.ics").exists()
+
+def test_fetch_super_lig_falls_back_to_feed(monkeypatch):
+    sample = json.load(open("tests/fixtures/sl_sample.json", encoding="utf-8"))
+    def boom(): raise RuntimeError("tff down")
+    monkeypatch.setattr(generate.fetch, "fetch_tff", boom)
+    monkeypatch.setattr(generate.fetch, "fetch_feed", lambda league: sample)
+    assert len(generate.fetch_super_lig()) == 3

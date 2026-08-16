@@ -3,16 +3,18 @@
 Süper Lig, Premier League ve Şampiyonlar Ligi maçlarını iPhone Takvim'ine
 düşüren, Beşiktaş ve seçili maçlara alarm koyan `.ics` üreticisi.
 
-- `besiktas-<EK>.ics` — Beşiktaş'ın tüm maçları, hepsi alarmlı
-- `futbol-<EK>.ics` — SL + PL + ŞL tamamı; yalnızca `watchlist.yml` kurallarına
-  uyan maçlar alarmlı (başlıkta 🔔)
+- `besiktas-<EK>.ics` — Beşiktaş'ın tüm maçları (lig, Avrupa, elle girilenler), hepsi alarmlı
+- `futbol-<EK>.ics` — SL + PL + ŞL/AL/Konferans, Beşiktaş maçları hariç; yalnızca
+  `watchlist.yml` kurallarına uyan maçlar alarmlı (başlıkta 🔔)
+
+Kaynaklar: Süper Lig → **tff.org** (resmi, saatler güncel), diğerleri →
+fixturedownload.com feed'leri.
 
 Yayın kanalı etkinliğin "konum" alanında: `TOD`, `tabii`, `TRT 1`.
 
 ## Kurulum
 
-1. Repo Secrets: `ICS_SUFFIX` (rastgele kısa ek, URL gizliliği için). API key gerekmez —
-   veri [fixturedownload.com](https://fixturedownload.com) feed'inden gelir.
+1. Repo Secrets: `ICS_SUFFIX` (rastgele kısa ek, URL gizliliği için). API key gerekmez.
 2. Settings → Pages → Deploy from branch → `main` / `/docs`.
 3. Actions → `build-ics` → Run workflow. `docs/*.ics` oluşur.
 4. iPhone: Ayarlar → Takvim → Hesaplar → Hesap Ekle → Diğer → **Abone Olunan

@@ -28,10 +28,20 @@ def split(matches: list[Match]) -> tuple[list[Match], list[Match]]:
     futbol = [m for m in matches if not is_team(m, "besiktas")]
     return bjk, futbol
 
+def fetch_super_lig() -> list[Match]:
+    """Birincil: TFF resmi site (saatler güncel). Yedek: fixturedownload feed (UID'ler farklı — geçici çift kayıt olabilir)."""
+    try:
+        return fetch.fetch_tff()
+    except Exception as e:
+        log.warning("TFF okunamadı, fixturedownload'a düşülüyor: %s", e)
+        return parse_feed(fetch.fetch_feed("SL"), "SL")
+
 def run(out_dir, watchlist_path: str, suffix: str) -> None:
     wl = Watchlist.load(watchlist_path)
-    matches: list[Match] = []
+    matches: list[Match] = fetch_super_lig()
     for league in config.FEEDS:
+        if league == "SL":
+            continue
         data = fetch.fetch_feed(league)
         if data is not None:
             matches += parse_feed(data, league)
