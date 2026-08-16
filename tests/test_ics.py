@@ -30,6 +30,11 @@ def test_finished_score_in_description():
     text = build_calendar("Futbol", [(m(finished=True, score="2-1"), False)], alerts=[]).to_ical().decode()
     assert "Skor: 2-1" in text
 
+def test_midnight_placeholder_flagged():
+    text = build_calendar("F", [(m(start=datetime(2026, 9, 5, 21, 0, tzinfo=timezone.utc)), False)], alerts=[]).to_ical().decode()
+    assert "Saat henüz kesinleşmedi" in text
+    assert "kesinleşmedi" not in build_calendar("F", [(m(), False)], alerts=[]).to_ical().decode()
+
 def test_cl_round_labels():
     text = build_calendar("F", [(m(league="CL", round=13, channel="tabii"), False)], alerts=[]).to_ical().decode()
     assert "Şampiyonlar Ligi · Çeyrek Final · tabii" in text

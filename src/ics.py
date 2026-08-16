@@ -31,6 +31,8 @@ def build_calendar(name: str, items: list[tuple[Match, bool]], alerts: list[int]
         desc = f"{config.LEAGUE_NAMES[m.league]} · {_round_label(m)} · {m.channel}"
         if m.finished and m.score:
             desc += f"\nSkor: {m.score}"
+        if start.hour == 0 and start.minute == 0:   # feed placeholder: saat açıklanmamış
+            desc += "\n⚠️ Saat henüz kesinleşmedi"
         ev.add("description", desc)
         if selected:
             for mins in alerts:
