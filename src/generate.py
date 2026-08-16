@@ -23,8 +23,10 @@ def assign_channels(matches: list[Match], trt_pairs: set[tuple[str, str]]) -> No
             m.channel = config.TRT_CHANNEL
 
 def split(matches: list[Match]) -> tuple[list[Match], list[Match]]:
+    """Beşiktaş maçları yalnızca Beşiktaş takvimine; Futbol takvimi geri kalanı alır (çift kayıt olmasın)."""
     bjk = [m for m in matches if is_team(m, "besiktas")]
-    return bjk, list(matches)
+    futbol = [m for m in matches if not is_team(m, "besiktas")]
+    return bjk, futbol
 
 def run(out_dir, watchlist_path: str, suffix: str) -> None:
     wl = Watchlist.load(watchlist_path)

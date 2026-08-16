@@ -20,7 +20,7 @@ def test_split_calendars():
           Match(3,"PL","Arsenal","Burnley",t,1,False,None,"TOD")]
     bjk, futbol = generate.split(ms)
     assert [m.id for m in bjk] == [1]
-    assert [m.id for m in futbol] == [1, 3]
+    assert [m.id for m in futbol] == [3]     # BJK maçı Futbol takviminde tekrar etmez
 
 def test_run_writes_files_and_skips_missing_cl(tmp_path, monkeypatch):
     sample = json.load(open("tests/fixtures/sl_sample.json", encoding="utf-8"))
