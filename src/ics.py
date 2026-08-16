@@ -1,4 +1,4 @@
-from datetime import timedelta
+from datetime import timedelta, timezone
 from zoneinfo import ZoneInfo
 from icalendar import Calendar, Event, Alarm
 from src import config
@@ -16,7 +16,19 @@ def _description(m: Match) -> str:
         return f"{m.note} · {m.channel}" if m.note else m.channel
     return f"{config.LEAGUE_NAMES[m.league]} · {_round_label(m)} · {m.channel}"
 
-def build_calendar(name: str, items: list[tuple[Match, bool]], alerts: list[int]) -> Calendar:
+def _alarm(title: str, trigger) -> Alarm:
+    a = Alarm()
+    a.add("action", "DISPLAY")
+    a.add("description", title)
+    if isinstance(trigger, timedelta):
+        a.add("trigger", trigger)
+    else:                                   # mutlak zaman (UTC) — RFC 5545 VALUE=DATE-TIME ister
+        a.add("trigger", trigger, parameters={"VALUE": "DATE-TIME"})
+    return a
+
+def build_calendar(name: str, items: list[tuple[Match, bool]], alerts: list[int],
+                   morning: str | None = None) -> Calendar:
+    """alerts: maçtan N dakika önce. morning: "HH:MM" (TR) — maç günü sabah alarmı, maç saatinden önceyse eklenir."""
     cal = Calendar()
     cal.add("prodid", "-//futbol-takvim//TR")
     cal.add("version", "2.0")
@@ -41,10 +53,11 @@ def build_calendar(name: str, items: list[tuple[Match, bool]], alerts: list[int]
         ev.add("description", desc)
         if selected:
             for mins in alerts:
-                a = Alarm()
-                a.add("action", "DISPLAY")
-                a.add("description", title)
-                a.add("trigger", timedelta(minutes=-mins))
-                ev.add_component(a)
+                ev.add_component(_alarm(title, timedelta(minutes=-mins)))
+            if morning:
+                hh, mm = (int(x) for x in morning.split(":"))
+                at = start.replace(hour=hh, minute=mm, second=0)
+                if at < start:
+                    ev.add_component(_alarm(f"Bugün maç var: {title}", at.astimezone(timezone.utc)))
         cal.add_component(ev)
     return cal

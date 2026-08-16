@@ -42,6 +42,20 @@ def test_eu_rules():
     assert is_selected(m("Roma", "Lyon", "UECL", 11), WL)      # Konferans çeyrek = tur 11
     assert not is_selected(m("Roma", "Lyon", "UECL", 10), WL)
 
+def test_is_included_filters_only_listed_leagues():
+    from src.rules import is_included
+    wl = Watchlist(include={"PL": ["Hull", "Man City"]})
+    assert is_included(m("Hull", "Burnley", "PL"), wl)
+    assert is_included(m("Man City", "Burnley", "PL"), wl)     # feed kısa ad kullanır
+    assert not is_included(m("Chelsea", "Burnley", "PL"), wl)
+    assert is_included(m("Konyaspor", "Rizespor", "SL"), wl)      # SL listede yok → hepsi
+
+def test_load_yaml_include_and_besiktas_alerts(tmp_path):
+    p = tmp_path / "w.yml"
+    p.write_text('include: {PL: [Hull]}\nbesiktas_alerts: {morning: "11:00", minutes: [60, 0]}\n', encoding="utf-8")
+    wl = Watchlist.load(p)
+    assert wl.include == {"PL": ["Hull"]} and wl.besiktas_alerts["morning"] == "11:00"
+
 def test_manual_always_selected():
     off = Watchlist()
     assert is_selected(m("Beşiktaş", "X", "MANUAL", 0), off)

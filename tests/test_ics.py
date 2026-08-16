@@ -35,6 +35,19 @@ def test_midnight_placeholder_flagged():
     assert "Saat henüz kesinleşmedi" in text.replace("\r\n ", "")   # 75-oktet katlamayı aç
     assert "kesinleşmedi" not in build_calendar("F", [(m(), False)], alerts=[]).to_ical().decode()
 
+def test_morning_alarm_absolute_trigger():
+    # maç 20:00 TR (17:00Z); sabah 11:00 TR = 08:00Z
+    text = build_calendar("B", [(m(), True)], alerts=[60, 0], morning="11:00").to_ical().decode()
+    assert text.count("BEGIN:VALARM") == 3
+    assert "TRIGGER:-PT1H" in text and "TRIGGER:P0D" in text
+    assert "TRIGGER;VALUE=DATE-TIME:20260901T080000Z" in text
+    assert "Bugün maç var" in text.replace("\r\n ", "")
+
+def test_morning_alarm_skipped_if_match_before_morning():
+    early = m(start=datetime(2026, 9, 1, 7, 0, tzinfo=timezone.utc))   # 10:00 TR
+    text = build_calendar("B", [(early, True)], alerts=[60], morning="11:00").to_ical().decode()
+    assert text.count("BEGIN:VALARM") == 1
+
 def test_manual_description():
     text = build_calendar("F", [(m(league="MANUAL", round=0, channel="tabii", note="AL Play-off"), True)], alerts=[60]).to_ical().decode()
     assert "DESCRIPTION:AL Play-off · tabii" in text and "BEGIN:VALARM" in text

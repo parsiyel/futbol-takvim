@@ -28,8 +28,14 @@ Yayın kanalı etkinliğin "konum" alanında: `TOD`, `tabii`, `TRT 1`.
 ## watchlist.yml
 
 ```yaml
-teams:                  # bu takımların tüm maçları alarmlı
-  - Beşiktaş
+besiktas_alerts:        # Beşiktaş takvimi: üç alarm
+  morning: "11:00"      # maç günü sabah (TR); maç bundan önceyse atlanır
+  minutes: [60, 0]      # 60 dk önce + maç anında
+
+include:                # Futbol takvimine girecek maçlar; lig listede yoksa hepsi girer
+  PL: [Hull, Arsenal, Chelsea, Liverpool, Man City, Man Utd, Spurs]
+
+teams: []               # bu takımların tüm maçları alarmlı
 matches:                # tek maç, sıra önemsiz
   - "Arsenal-Manchester City"
 rules:

@@ -11,13 +11,21 @@ class Watchlist:
     rules: dict = field(default_factory=dict)
     alerts_minutes: list[int] = field(default_factory=lambda: [60, 15])
     manual: list[dict] = field(default_factory=list)
+    include: dict[str, list[str]] = field(default_factory=dict)   # lig -> takvime girecek takımlar (yoksa hepsi)
+    besiktas_alerts: dict = field(default_factory=lambda: {"minutes": [60, 0], "morning": "11:00"})
 
     @classmethod
     def load(cls, path) -> "Watchlist":
         d = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
         return cls(teams=d.get("teams") or [], matches=d.get("matches") or [],
                    rules=d.get("rules") or {}, alerts_minutes=d.get("alerts_minutes") or [60, 15],
-                   manual=d.get("manual") or [])
+                   manual=d.get("manual") or [], include=d.get("include") or {},
+                   besiktas_alerts=d.get("besiktas_alerts") or {"minutes": [60, 0], "morning": "11:00"})
+
+def is_included(match: Match, wl: Watchlist) -> bool:
+    """Ligde `include` listesi varsa yalnızca o takımların maçları takvime girer."""
+    teams = wl.include.get(match.league)
+    return not teams or any(is_team(match, t) for t in teams)
 
 def _canon(user_name: str) -> str:
     n = normalize(user_name)

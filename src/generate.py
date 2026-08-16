@@ -3,7 +3,7 @@ from pathlib import Path
 from src import config, fetch
 from src.ics import build_calendar
 from src.model import Match, parse_feed, parse_manual
-from src.rules import Watchlist, is_selected, is_team
+from src.rules import Watchlist, is_included, is_selected, is_team
 
 log = logging.getLogger(__name__)
 
@@ -49,9 +49,12 @@ def run(out_dir, watchlist_path: str, suffix: str) -> None:
     assign_channels(matches, fetch.trt_cl_pairs())
     matches.sort(key=lambda m: m.start)
     bjk, futbol = split(matches)
+    futbol = [m for m in futbol if is_included(m, wl)]
     out_dir = Path(out_dir); out_dir.mkdir(parents=True, exist_ok=True)
+    ba = wl.besiktas_alerts
     (out_dir / f"besiktas-{suffix}.ics").write_bytes(
-        build_calendar("Beşiktaş", [(m, True) for m in bjk], wl.alerts_minutes).to_ical())
+        build_calendar("Beşiktaş", [(m, True) for m in bjk], ba.get("minutes", [60, 0]),
+                       morning=ba.get("morning")).to_ical())
     (out_dir / f"futbol-{suffix}.ics").write_bytes(
         build_calendar("Futbol", [(m, is_selected(m, wl)) for m in futbol], wl.alerts_minutes).to_ical())
     log.info("yazıldı: %d Beşiktaş, %d futbol", len(bjk), len(futbol))
