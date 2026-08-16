@@ -96,6 +96,26 @@ DESCRIPTION:Süper Lig · 1. Hafta · TOD
 LOCATION:TOD
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:🔔 ⚽ Beşiktaş – Kauno Žalgiris
+DTSTART;TZID=Europe/Istanbul:20260820T200000
+DTEND;TZID=Europe/Istanbul:20260820T220000
+DTSTAMP:20260820T170000Z
+UID:MANUAL-1@futbol-takvim
+DESCRIPTION:Avrupa Ligi Play-off\, ilk maç (Tüpraş) · TRT 1 / S Sport 
+ Plus (teyit edilmedi)
+LOCATION:TRT 1 / S Sport Plus (teyit edilmedi)
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Beşiktaş – Kauno Žalgiris
+TRIGGER:-PT1H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Beşiktaş – Kauno Žalgiris
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:⚽ Arsenal – Coventry
 DTSTART;TZID=Europe/Istanbul:20260821T220000
 DTEND;TZID=Europe/Istanbul:20260822T000000
@@ -284,6 +304,26 @@ DTSTAMP:20260824T190000Z
 UID:PL-10@futbol-takvim
 DESCRIPTION:Premier League · 1. Hafta · TOD
 LOCATION:TOD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🔔 ⚽ Kauno Žalgiris – Beşiktaş
+DTSTART;TZID=Europe/Istanbul:20260827T200000
+DTEND;TZID=Europe/Istanbul:20260827T220000
+DTSTAMP:20260827T170000Z
+UID:MANUAL-2@futbol-takvim
+DESCRIPTION:Avrupa Ligi Play-off\, rövanş (Kaunas) — saat teyit edilme
+ di · teyit edilmedi
+LOCATION:teyit edilmedi
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Kauno Žalgiris – Beşiktaş
+TRIGGER:-PT1H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Kauno Žalgiris – Beşiktaş
+TRIGGER:-PT15M
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:⚽ Crystal Palace – Man City
