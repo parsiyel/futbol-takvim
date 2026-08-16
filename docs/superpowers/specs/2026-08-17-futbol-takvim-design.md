@@ -33,8 +33,8 @@ TRT yayın akışı ─┘   ▲           docs/futbol.ics
               watchlist.yml
 ```
 
-- **Repo:** GitHub `futbol-takvim` (private). GitHub Pages `docs/` klasöründen
-  yayınlar; iPhone `https://<user>.github.io/futbol-takvim/<dosya>.ics` adresine
+- **Repo:** GitHub `parsiyel/futbol-takvim` (private). GitHub Pages `docs/` klasöründen
+  yayınlar; iPhone `https://parsiyel.github.io/futbol-takvim/<dosya>.ics` adresine
   abone olur. Dosya adlarına tahmin edilemez bir ek eklenir (ör.
   `futbol-a8f3.ics`) — Pages public olduğundan basit gizlilik.
 - **Çalışma:** GitHub Actions cron günde 4 kez (TR 06:00, 12:00, 17:00, 21:00)
