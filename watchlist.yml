@@ -6,6 +6,7 @@ besiktas_alerts:
 # --- Futbol takvimi (futbol.ics) ---
 # Takvime girecek maçlar. Lig listede yoksa tüm maçları girer.
 include:
+  SL: [Fenerbahçe, Galatasaray, Trabzonspor]   # Beşiktaş zaten kendi takviminde
   PL: [Hull, Arsenal, Chelsea, Liverpool, Man City, Man Utd, Spurs]
 
 # Alarmlı olacaklar (🔔). teams: bu takımların tüm maçları; matches: tek maç ("A-B", sıra önemsiz)
