@@ -32,7 +32,7 @@ def test_finished_score_in_description():
 
 def test_midnight_placeholder_flagged():
     text = build_calendar("F", [(m(start=datetime(2026, 9, 5, 21, 0, tzinfo=timezone.utc)), False)], alerts=[]).to_ical().decode()
-    assert "Saat henüz kesinleşmedi" in text
+    assert "Saat henüz kesinleşmedi" in text.replace("\r\n ", "")   # 75-oktet katlamayı aç
     assert "kesinleşmedi" not in build_calendar("F", [(m(), False)], alerts=[]).to_ical().decode()
 
 def test_cl_round_labels():
