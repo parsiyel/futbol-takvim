@@ -5,21 +5,21 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-WR-CALNAME:Beşiktaş
 X-WR-TIMEZONE:Europe/Istanbul
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Eyüpspor
+SUMMARY:🔔 ⚽ Beşiktaş – Eyüpspor
 DTSTART;TZID=Europe/Istanbul:20260816T213000
 DTEND;TZID=Europe/Istanbul:20260816T233000
 DTSTAMP:20260816T183000Z
-UID:SL-8@futbol-takvim
-DESCRIPTION:Süper Lig · 1. Hafta · TOD
+UID:SL-317791@futbol-takvim
+DESCRIPTION:Süper Lig · 1. Hafta · TOD\nSkor: 1-0
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Eyüpspor
+DESCRIPTION:⚽ Beşiktaş – Eyüpspor
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Eyüpspor
+DESCRIPTION:⚽ Beşiktaş – Eyüpspor
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -44,22 +44,21 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Alanyaspor – Besiktas
-DTSTART;TZID=Europe/Istanbul:20260823T000000
-DTEND;TZID=Europe/Istanbul:20260823T020000
-DTSTAMP:20260822T210000Z
-UID:SL-13@futbol-takvim
-DESCRIPTION:Süper Lig · 2. Hafta · TOD\n⚠️ Saat henüz kesinleşmed
- i
+SUMMARY:🔔 ⚽ Alanyaspor – Beşiktaş
+DTSTART;TZID=Europe/Istanbul:20260823T213000
+DTEND;TZID=Europe/Istanbul:20260823T233000
+DTSTAMP:20260823T183000Z
+UID:SL-317795@futbol-takvim
+DESCRIPTION:Süper Lig · 2. Hafta · TOD
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Alanyaspor – Besiktas
+DESCRIPTION:⚽ Alanyaspor – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Alanyaspor – Besiktas
+DESCRIPTION:⚽ Alanyaspor – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -84,642 +83,641 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Çorum
-DTSTART;TZID=Europe/Istanbul:20260830T000000
-DTEND;TZID=Europe/Istanbul:20260830T020000
-DTSTAMP:20260829T210000Z
-UID:SL-26@futbol-takvim
-DESCRIPTION:Süper Lig · 3. Hafta · TOD\n⚠️ Saat henüz kesinleşmed
- i
+SUMMARY:🔔 ⚽ Beşiktaş – Çorum
+DTSTART;TZID=Europe/Istanbul:20260831T213000
+DTEND;TZID=Europe/Istanbul:20260831T233000
+DTSTAMP:20260831T183000Z
+UID:SL-317809@futbol-takvim
+DESCRIPTION:Süper Lig · 3. Hafta · TOD
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Çorum
+DESCRIPTION:⚽ Beşiktaş – Çorum
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Çorum
+DESCRIPTION:⚽ Beşiktaş – Çorum
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Fenerbahçe – Besiktas
+SUMMARY:🔔 ⚽ Fenerbahçe – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20260906T000000
 DTEND;TZID=Europe/Istanbul:20260906T020000
 DTSTAMP:20260905T210000Z
-UID:SL-34@futbol-takvim
+UID:SL-317817@futbol-takvim
 DESCRIPTION:Süper Lig · 4. Hafta · TOD\n⚠️ Saat henüz kesinleşmed
  i
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Fenerbahçe – Besiktas
+DESCRIPTION:⚽ Fenerbahçe – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Fenerbahçe – Besiktas
+DESCRIPTION:⚽ Fenerbahçe – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Erzurumspor
+SUMMARY:🔔 ⚽ Beşiktaş – Erzurumspor
 DTSTART;TZID=Europe/Istanbul:20260913T000000
 DTEND;TZID=Europe/Istanbul:20260913T020000
 DTSTAMP:20260912T210000Z
-UID:SL-44@futbol-takvim
+UID:SL-317827@futbol-takvim
 DESCRIPTION:Süper Lig · 5. Hafta · TOD\n⚠️ Saat henüz kesinleşmed
  i
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Erzurumspor
+DESCRIPTION:⚽ Beşiktaş – Erzurumspor
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Erzurumspor
+DESCRIPTION:⚽ Beşiktaş – Erzurumspor
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Amedspor – Besiktas
+SUMMARY:🔔 ⚽ Amed Sportif Faaliyetler – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20260920T000000
 DTEND;TZID=Europe/Istanbul:20260920T020000
 DTSTAMP:20260919T210000Z
-UID:SL-49@futbol-takvim
+UID:SL-317832@futbol-takvim
 DESCRIPTION:Süper Lig · 6. Hafta · TOD\n⚠️ Saat henüz kesinleşmed
  i
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Amedspor – Besiktas
+DESCRIPTION:⚽ Amed Sportif Faaliyetler – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Amedspor – Besiktas
+DESCRIPTION:⚽ Amed Sportif Faaliyetler – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Kocaelispor
+SUMMARY:🔔 ⚽ Beşiktaş – Kocaelispor
 DTSTART;TZID=Europe/Istanbul:20261011T000000
 DTEND;TZID=Europe/Istanbul:20261011T020000
 DTSTAMP:20261010T210000Z
-UID:SL-62@futbol-takvim
+UID:SL-317845@futbol-takvim
 DESCRIPTION:Süper Lig · 7. Hafta · TOD\n⚠️ Saat henüz kesinleşmed
  i
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Kocaelispor
+DESCRIPTION:⚽ Beşiktaş – Kocaelispor
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Kocaelispor
+DESCRIPTION:⚽ Beşiktaş – Kocaelispor
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Trabzonspor – Besiktas
+SUMMARY:🔔 ⚽ Trabzonspor – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20261018T000000
 DTEND;TZID=Europe/Istanbul:20261018T020000
 DTSTAMP:20261017T210000Z
-UID:SL-64@futbol-takvim
+UID:SL-317847@futbol-takvim
 DESCRIPTION:Süper Lig · 8. Hafta · TOD\n⚠️ Saat henüz kesinleşmed
  i
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Trabzonspor – Besiktas
+DESCRIPTION:⚽ Trabzonspor – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Trabzonspor – Besiktas
+DESCRIPTION:⚽ Trabzonspor – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Istanbul Basaksehir
+SUMMARY:🔔 ⚽ Beşiktaş – İstanbul Başakşehir
 DTSTART;TZID=Europe/Istanbul:20261025T000000
 DTEND;TZID=Europe/Istanbul:20261025T020000
 DTSTAMP:20261024T210000Z
-UID:SL-80@futbol-takvim
+UID:SL-317863@futbol-takvim
 DESCRIPTION:Süper Lig · 9. Hafta · TOD\n⚠️ Saat henüz kesinleşmed
  i
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Istanbul Basaksehir
+DESCRIPTION:⚽ Beşiktaş – İstanbul Başakşehir
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Istanbul Basaksehir
+DESCRIPTION:⚽ Beşiktaş – İstanbul Başakşehir
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Kasimpasa – Besiktas
+SUMMARY:🔔 ⚽ Kasımpaşa – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20261101T000000
 DTEND;TZID=Europe/Istanbul:20261101T020000
 DTSTAMP:20261031T210000Z
-UID:SL-83@futbol-takvim
+UID:SL-317866@futbol-takvim
 DESCRIPTION:Süper Lig · 10. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Kasimpasa – Besiktas
+DESCRIPTION:⚽ Kasımpaşa – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Kasimpasa – Besiktas
+DESCRIPTION:⚽ Kasımpaşa – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Gençlerbirligi
+SUMMARY:🔔 ⚽ Beşiktaş – Gençlerbirliği
 DTSTART;TZID=Europe/Istanbul:20261108T000000
 DTEND;TZID=Europe/Istanbul:20261108T020000
 DTSTAMP:20261107T210000Z
-UID:SL-98@futbol-takvim
+UID:SL-317881@futbol-takvim
 DESCRIPTION:Süper Lig · 11. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Gençlerbirligi
+DESCRIPTION:⚽ Beşiktaş – Gençlerbirliği
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Gençlerbirligi
+DESCRIPTION:⚽ Beşiktaş – Gençlerbirliği
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Konyaspor – Besiktas
+SUMMARY:🔔 ⚽ Konyaspor – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20261122T000000
 DTEND;TZID=Europe/Istanbul:20261122T020000
 DTSTAMP:20261121T210000Z
-UID:SL-105@futbol-takvim
+UID:SL-317888@futbol-takvim
 DESCRIPTION:Süper Lig · 12. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Konyaspor – Besiktas
+DESCRIPTION:⚽ Konyaspor – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Konyaspor – Besiktas
+DESCRIPTION:⚽ Konyaspor – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Galatasaray
+SUMMARY:🔔 ⚽ Beşiktaş – Galatasaray
 DTSTART;TZID=Europe/Istanbul:20261129T000000
 DTEND;TZID=Europe/Istanbul:20261129T020000
 DTSTAMP:20261128T210000Z
-UID:SL-116@futbol-takvim
+UID:SL-317899@futbol-takvim
 DESCRIPTION:Süper Lig · 13. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Galatasaray
+DESCRIPTION:⚽ Beşiktaş – Galatasaray
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Galatasaray
+DESCRIPTION:⚽ Beşiktaş – Galatasaray
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Samsunspor
+SUMMARY:🔔 ⚽ Beşiktaş – Samsunspor
 DTSTART;TZID=Europe/Istanbul:20261206T000000
 DTEND;TZID=Europe/Istanbul:20261206T020000
 DTSTAMP:20261205T210000Z
-UID:SL-125@futbol-takvim
+UID:SL-317908@futbol-takvim
 DESCRIPTION:Süper Lig · 14. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Samsunspor
+DESCRIPTION:⚽ Beşiktaş – Samsunspor
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Samsunspor
+DESCRIPTION:⚽ Beşiktaş – Samsunspor
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Gaziantep – Besiktas
+SUMMARY:🔔 ⚽ Gaziantep Futbol Kulübü – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20261213T000000
 DTEND;TZID=Europe/Istanbul:20261213T020000
 DTSTAMP:20261212T210000Z
-UID:SL-127@futbol-takvim
+UID:SL-317910@futbol-takvim
 DESCRIPTION:Süper Lig · 15. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Gaziantep – Besiktas
+DESCRIPTION:⚽ Gaziantep Futbol Kulübü – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Gaziantep – Besiktas
+DESCRIPTION:⚽ Gaziantep Futbol Kulübü – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Çaykur Rizespor
+SUMMARY:🔔 ⚽ Beşiktaş – Rizespor
 DTSTART;TZID=Europe/Istanbul:20261220T000000
 DTEND;TZID=Europe/Istanbul:20261220T020000
 DTSTAMP:20261219T210000Z
-UID:SL-143@futbol-takvim
+UID:SL-317926@futbol-takvim
 DESCRIPTION:Süper Lig · 16. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Çaykur Rizespor
+DESCRIPTION:⚽ Beşiktaş – Rizespor
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Çaykur Rizespor
+DESCRIPTION:⚽ Beşiktaş – Rizespor
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Göztepe – Besiktas
+SUMMARY:🔔 ⚽ Göztepe – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20270117T000000
 DTEND;TZID=Europe/Istanbul:20270117T020000
 DTSTAMP:20270116T210000Z
-UID:SL-149@futbol-takvim
+UID:SL-317932@futbol-takvim
 DESCRIPTION:Süper Lig · 17. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Göztepe – Besiktas
+DESCRIPTION:⚽ Göztepe – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Göztepe – Besiktas
+DESCRIPTION:⚽ Göztepe – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Eyüpspor – Besiktas
+SUMMARY:🔔 ⚽ Eyüpspor – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20270124T000000
 DTEND;TZID=Europe/Istanbul:20270124T020000
 DTSTAMP:20270123T210000Z
-UID:SL-161@futbol-takvim
+UID:SL-317944@futbol-takvim
 DESCRIPTION:Süper Lig · 18. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Eyüpspor – Besiktas
+DESCRIPTION:⚽ Eyüpspor – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Eyüpspor – Besiktas
+DESCRIPTION:⚽ Eyüpspor – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Alanyaspor
+SUMMARY:🔔 ⚽ Beşiktaş – Alanyaspor
 DTSTART;TZID=Europe/Istanbul:20270131T000000
 DTEND;TZID=Europe/Istanbul:20270131T020000
 DTSTAMP:20270130T210000Z
-UID:SL-165@futbol-takvim
+UID:SL-317948@futbol-takvim
 DESCRIPTION:Süper Lig · 19. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Alanyaspor
+DESCRIPTION:⚽ Beşiktaş – Alanyaspor
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Alanyaspor
+DESCRIPTION:⚽ Beşiktaş – Alanyaspor
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Çorum – Besiktas
+SUMMARY:🔔 ⚽ Çorum – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20270207T000000
 DTEND;TZID=Europe/Istanbul:20270207T020000
 DTSTAMP:20270206T210000Z
-UID:SL-179@futbol-takvim
+UID:SL-317962@futbol-takvim
 DESCRIPTION:Süper Lig · 20. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Çorum – Besiktas
+DESCRIPTION:⚽ Çorum – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Çorum – Besiktas
+DESCRIPTION:⚽ Çorum – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Fenerbahçe
+SUMMARY:🔔 ⚽ Beşiktaş – Fenerbahçe
 DTSTART;TZID=Europe/Istanbul:20270214T000000
 DTEND;TZID=Europe/Istanbul:20270214T020000
 DTSTAMP:20270213T210000Z
-UID:SL-187@futbol-takvim
+UID:SL-317970@futbol-takvim
 DESCRIPTION:Süper Lig · 21. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Fenerbahçe
+DESCRIPTION:⚽ Beşiktaş – Fenerbahçe
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Fenerbahçe
+DESCRIPTION:⚽ Beşiktaş – Fenerbahçe
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Erzurumspor – Besiktas
+SUMMARY:🔔 ⚽ Erzurumspor – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20270221T000000
 DTEND;TZID=Europe/Istanbul:20270221T020000
 DTSTAMP:20270220T210000Z
-UID:SL-197@futbol-takvim
+UID:SL-317980@futbol-takvim
 DESCRIPTION:Süper Lig · 22. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Erzurumspor – Besiktas
+DESCRIPTION:⚽ Erzurumspor – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Erzurumspor – Besiktas
+DESCRIPTION:⚽ Erzurumspor – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Amedspor
+SUMMARY:🔔 ⚽ Beşiktaş – Amed Sportif Faaliyetler
 DTSTART;TZID=Europe/Istanbul:20270228T000000
 DTEND;TZID=Europe/Istanbul:20270228T020000
 DTSTAMP:20270227T210000Z
-UID:SL-202@futbol-takvim
+UID:SL-317985@futbol-takvim
 DESCRIPTION:Süper Lig · 23. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Amedspor
+DESCRIPTION:⚽ Beşiktaş – Amed Sportif Faaliyetler
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Amedspor
+DESCRIPTION:⚽ Beşiktaş – Amed Sportif Faaliyetler
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Kocaelispor – Besiktas
+SUMMARY:🔔 ⚽ Kocaelispor – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20270307T000000
 DTEND;TZID=Europe/Istanbul:20270307T020000
 DTSTAMP:20270306T210000Z
-UID:SL-215@futbol-takvim
+UID:SL-317998@futbol-takvim
 DESCRIPTION:Süper Lig · 24. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Kocaelispor – Besiktas
+DESCRIPTION:⚽ Kocaelispor – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Kocaelispor – Besiktas
+DESCRIPTION:⚽ Kocaelispor – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Trabzonspor
+SUMMARY:🔔 ⚽ Beşiktaş – Trabzonspor
 DTSTART;TZID=Europe/Istanbul:20270314T000000
 DTEND;TZID=Europe/Istanbul:20270314T020000
 DTSTAMP:20270313T210000Z
-UID:SL-217@futbol-takvim
+UID:SL-318000@futbol-takvim
 DESCRIPTION:Süper Lig · 25. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Trabzonspor
+DESCRIPTION:⚽ Beşiktaş – Trabzonspor
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Trabzonspor
+DESCRIPTION:⚽ Beşiktaş – Trabzonspor
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Istanbul Basaksehir – Besiktas
+SUMMARY:🔔 ⚽ İstanbul Başakşehir – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20270321T000000
 DTEND;TZID=Europe/Istanbul:20270321T020000
 DTSTAMP:20270320T210000Z
-UID:SL-233@futbol-takvim
+UID:SL-318016@futbol-takvim
 DESCRIPTION:Süper Lig · 26. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Istanbul Basaksehir – Besiktas
+DESCRIPTION:⚽ İstanbul Başakşehir – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Istanbul Basaksehir – Besiktas
+DESCRIPTION:⚽ İstanbul Başakşehir – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Kasimpasa
+SUMMARY:🔔 ⚽ Beşiktaş – Kasımpaşa
 DTSTART;TZID=Europe/Istanbul:20270404T000000
 DTEND;TZID=Europe/Istanbul:20270404T020000
 DTSTAMP:20270403T210000Z
-UID:SL-236@futbol-takvim
+UID:SL-318019@futbol-takvim
 DESCRIPTION:Süper Lig · 27. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Kasimpasa
+DESCRIPTION:⚽ Beşiktaş – Kasımpaşa
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Kasimpasa
+DESCRIPTION:⚽ Beşiktaş – Kasımpaşa
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Gençlerbirligi – Besiktas
+SUMMARY:🔔 ⚽ Gençlerbirliği – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20270411T000000
 DTEND;TZID=Europe/Istanbul:20270411T020000
 DTSTAMP:20270410T210000Z
-UID:SL-251@futbol-takvim
+UID:SL-318034@futbol-takvim
 DESCRIPTION:Süper Lig · 28. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Gençlerbirligi – Besiktas
+DESCRIPTION:⚽ Gençlerbirliği – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Gençlerbirligi – Besiktas
+DESCRIPTION:⚽ Gençlerbirliği – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Konyaspor
+SUMMARY:🔔 ⚽ Beşiktaş – Konyaspor
 DTSTART;TZID=Europe/Istanbul:20270418T000000
 DTEND;TZID=Europe/Istanbul:20270418T020000
 DTSTAMP:20270417T210000Z
-UID:SL-258@futbol-takvim
+UID:SL-318041@futbol-takvim
 DESCRIPTION:Süper Lig · 29. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Konyaspor
+DESCRIPTION:⚽ Beşiktaş – Konyaspor
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Konyaspor
+DESCRIPTION:⚽ Beşiktaş – Konyaspor
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Galatasaray – Besiktas
+SUMMARY:🔔 ⚽ Galatasaray – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20270425T000000
 DTEND;TZID=Europe/Istanbul:20270425T020000
 DTSTAMP:20270424T210000Z
-UID:SL-269@futbol-takvim
+UID:SL-318052@futbol-takvim
 DESCRIPTION:Süper Lig · 30. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Galatasaray – Besiktas
+DESCRIPTION:⚽ Galatasaray – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Galatasaray – Besiktas
+DESCRIPTION:⚽ Galatasaray – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Samsunspor – Besiktas
+SUMMARY:🔔 ⚽ Samsunspor – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20270502T000000
 DTEND;TZID=Europe/Istanbul:20270502T020000
 DTSTAMP:20270501T210000Z
-UID:SL-278@futbol-takvim
+UID:SL-318061@futbol-takvim
 DESCRIPTION:Süper Lig · 31. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Samsunspor – Besiktas
+DESCRIPTION:⚽ Samsunspor – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Samsunspor – Besiktas
+DESCRIPTION:⚽ Samsunspor – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Gaziantep
+SUMMARY:🔔 ⚽ Beşiktaş – Gaziantep Futbol Kulübü
 DTSTART;TZID=Europe/Istanbul:20270509T000000
 DTEND;TZID=Europe/Istanbul:20270509T020000
 DTSTAMP:20270508T210000Z
-UID:SL-280@futbol-takvim
+UID:SL-318063@futbol-takvim
 DESCRIPTION:Süper Lig · 32. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Gaziantep
+DESCRIPTION:⚽ Beşiktaş – Gaziantep Futbol Kulübü
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Gaziantep
+DESCRIPTION:⚽ Beşiktaş – Gaziantep Futbol Kulübü
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Çaykur Rizespor – Besiktas
+SUMMARY:🔔 ⚽ Rizespor – Beşiktaş
 DTSTART;TZID=Europe/Istanbul:20270516T000000
 DTEND;TZID=Europe/Istanbul:20270516T020000
 DTSTAMP:20270515T210000Z
-UID:SL-296@futbol-takvim
+UID:SL-318079@futbol-takvim
 DESCRIPTION:Süper Lig · 33. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Çaykur Rizespor – Besiktas
+DESCRIPTION:⚽ Rizespor – Beşiktaş
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Çaykur Rizespor – Besiktas
+DESCRIPTION:⚽ Rizespor – Beşiktaş
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Besiktas – Göztepe
+SUMMARY:🔔 ⚽ Beşiktaş – Göztepe
 DTSTART;TZID=Europe/Istanbul:20270523T000000
 DTEND;TZID=Europe/Istanbul:20270523T020000
 DTSTAMP:20270522T210000Z
-UID:SL-302@futbol-takvim
+UID:SL-318085@futbol-takvim
 DESCRIPTION:Süper Lig · 34. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Göztepe
+DESCRIPTION:⚽ Beşiktaş – Göztepe
 TRIGGER:-PT1H
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚽ Besiktas – Göztepe
+DESCRIPTION:⚽ Beşiktaş – Göztepe
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
