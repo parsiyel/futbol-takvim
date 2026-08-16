@@ -1,0 +1,10 @@
+teams:
+  - Beşiktaş
+matches: []          # örnek: "Arsenal-Manchester City"
+rules:
+  sl_derbies: true
+  pl_big6: true
+  cl_from_qf: true
+  cl_tr_teams: true
+  cl_trt: true
+alerts_minutes: [60, 15]
