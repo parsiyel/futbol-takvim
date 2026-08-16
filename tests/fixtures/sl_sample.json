@@ -1,0 +1,10 @@
+{"response": [
+ {"fixture": {"id": 1001, "date": "2026-08-15T18:00:00+00:00", "status": {"short": "FT"}},
+  "league": {"id": 203, "round": "Regular Season - 2"},
+  "teams": {"home": {"name": "Besiktas"}, "away": {"name": "Galatasaray"}},
+  "goals": {"home": 2, "away": 1}},
+ {"fixture": {"id": 1002, "date": "2026-08-22T16:00:00+00:00", "status": {"short": "NS"}},
+  "league": {"id": 203, "round": "Regular Season - 3"},
+  "teams": {"home": {"name": "Fenerbahçe"}, "away": {"name": "Beşiktaş"}},
+  "goals": {"home": null, "away": null}}
+]}
