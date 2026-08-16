@@ -34,7 +34,7 @@ def test_fetch_feed_empty_raises(monkeypatch):
 def test_fetch_tff_all_weeks(monkeypatch):
     html = open("tests/fixtures/tff_week2.html", encoding="utf-8").read()
     calls = []
-    def fake_get(url, headers, timeout):
+    def fake_get(url, headers, timeout, verify=True):
         calls.append(url); return FakeResp(200, text=html)
     monkeypatch.setattr(fetch.requests, "get", fake_get)
     ms = fetch.fetch_tff()
