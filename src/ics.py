@@ -1,4 +1,3 @@
-import re
 from datetime import timedelta
 from zoneinfo import ZoneInfo
 from icalendar import Calendar, Event, Alarm
@@ -8,8 +7,9 @@ from src.model import Match
 TZ = ZoneInfo("Europe/Istanbul")
 
 def _round_label(m: Match) -> str:
-    mo = re.match(r"Regular Season - (\d+)", m.round)
-    return f"{mo.group(1)}. Hafta" if mo else m.round
+    if m.league == "CL":
+        return config.CL_ROUND_LABELS.get(m.round, f"Lig Aşaması {m.round}. Hafta")
+    return f"{m.round}. Hafta"
 
 def build_calendar(name: str, items: list[tuple[Match, bool]], alerts: list[int]) -> Calendar:
     cal = Calendar()
@@ -20,7 +20,7 @@ def build_calendar(name: str, items: list[tuple[Match, bool]], alerts: list[int]
     cal.add("REFRESH-INTERVAL;VALUE=DURATION", "PT1H")
     for m, selected in items:
         ev = Event()
-        ev.add("uid", f"af-{m.id}@futbol-takvim")
+        ev.add("uid", m.uid)
         title = f"⚽ {m.home} – {m.away}"
         ev.add("summary", f"🔔 {title}" if selected else title)
         start = m.start.astimezone(TZ)

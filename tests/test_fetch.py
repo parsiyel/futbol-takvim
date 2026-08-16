@@ -2,34 +2,43 @@ import pytest
 from src import fetch
 
 class FakeResp:
-    def __init__(self, status, payload): self.status_code = status; self._p = payload
+    def __init__(self, status, payload=None, text=""):
+        self.status_code = status; self._p = payload; self.text = text
     def json(self): return self._p
     def raise_for_status(self):
         if self.status_code >= 400: raise RuntimeError("http")
 
-def test_fetch_league_ok(monkeypatch):
+def test_fetch_feed_ok(monkeypatch):
     seen = {}
-    def fake_get(url, headers, params, timeout):
-        seen.update(url=url, headers=headers, params=params)
-        return FakeResp(200, {"response": [{"x": 1}]})
+    def fake_get(url, headers, timeout):
+        seen["url"] = url
+        return FakeResp(200, [{"MatchNumber": 1}])
     monkeypatch.setattr(fetch.requests, "get", fake_get)
-    data = fetch.fetch_league(203, "KEY")
-    assert data["response"] == [{"x": 1}]
-    assert seen["url"].endswith("/fixtures")
-    assert seen["headers"]["x-apisports-key"] == "KEY"
-    assert seen["params"] == {"league": 203, "season": fetch.config.SEASON}
+    assert fetch.fetch_feed("SL") == [{"MatchNumber": 1}]
+    assert seen["url"].endswith("/super-lig-2026")
 
-def test_fetch_league_empty_raises(monkeypatch):
-    monkeypatch.setattr(fetch.requests, "get", lambda *a, **k: FakeResp(200, {"response": [], "errors": {"plan": "x"}}))
+def test_fetch_feed_optional_404_returns_none(monkeypatch):
+    monkeypatch.setattr(fetch.requests, "get", lambda *a, **k: FakeResp(404))
+    assert fetch.fetch_feed("CL") is None
+
+def test_fetch_feed_required_404_raises(monkeypatch):
+    monkeypatch.setattr(fetch.requests, "get", lambda *a, **k: FakeResp(404))
     with pytest.raises(fetch.FetchError):
-        fetch.fetch_league(203, "KEY")
+        fetch.fetch_feed("SL")
+
+def test_fetch_feed_empty_raises(monkeypatch):
+    monkeypatch.setattr(fetch.requests, "get", lambda *a, **k: FakeResp(200, []))
+    with pytest.raises(fetch.FetchError):
+        fetch.fetch_feed("PL")
 
 def test_trt_matches_parses_teams():
-    html = '<div class="program"><span class="time">22:00</span><span class="title">UEFA Şampiyonlar Ligi: Galatasaray - Bayern Münih</span></div>'
-    pairs = fetch.parse_trt_html(html)
-    assert pairs == [("galatasaray", "bayern munih")]
+    html = ('{"title":"Haber","starttime":"x"},'
+            '{"title":"Fenerbahçe - Lyon | UEFA Şampiyonlar Ligi Play Off Maçı","starttime":"y"},'
+            '{"title":"Manchester City-Galatasaray | UEFA Şampiyonlar Ligi Grup Maçları"},'
+            '{"title":"FSCB -Fenerbahçe | Avrupa Ligi Grup Maçları"}')
+    assert fetch.parse_trt_html(html) == [("fenerbahce", "lyon"), ("manchester city", "galatasaray")]
 
 def test_trt_failure_returns_empty(monkeypatch):
     def boom(*a, **k): raise RuntimeError("down")
     monkeypatch.setattr(fetch.requests, "get", boom)
-    assert fetch.trt_cl_pairs(days=2) == set()
+    assert fetch.trt_cl_pairs() == set()

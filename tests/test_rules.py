@@ -2,21 +2,22 @@ from datetime import datetime, timezone
 from src.model import Match
 from src.rules import Watchlist, is_selected, is_team
 
-def m(home, away, league="SL", round="Regular Season - 1", channel=""):
+def m(home, away, league="SL", round=1, channel=""):
     return Match(1, league, home, away, datetime(2026, 9, 1, tzinfo=timezone.utc), round, False, None, channel)
 
-WL = Watchlist(teams=["Beşiktaş", "man city"], matches=["Arsenal-Liverpool"],
+WL = Watchlist(teams=["Beşiktaş", "manchester city"], matches=["Arsenal-Liverpool"],
                rules={"sl_derbies": True, "pl_big6": True, "cl_from_qf": True, "cl_tr_teams": True, "cl_trt": True},
                alerts_minutes=[60, 15])
 
 def test_is_team_alias_and_accent():
     assert is_team(m("Beşiktaş", "Kasımpaşa"), "besiktas")
-    assert is_team(m("Manchester City", "Burnley"), "man city")
-    assert not is_team(m("Manchester United", "Burnley"), "man city")
+    assert is_team(m("Man City", "Burnley"), "manchester city")
+    assert is_team(m("Spurs", "Burnley"), "Tottenham")
+    assert not is_team(m("Man Utd", "Burnley"), "man city")
 
 def test_teams_list():
-    assert is_selected(m("Kasımpaşa", "Beşiktaş"), WL)
-    assert is_selected(m("Manchester City", "Burnley", "PL"), WL)
+    assert is_selected(m("Kasimpasa", "Besiktas"), WL)
+    assert is_selected(m("Man City", "Burnley", "PL"), WL)
 
 def test_matches_list_order_free():
     assert is_selected(m("Liverpool", "Arsenal", "PL"), WL)
@@ -29,13 +30,14 @@ def test_sl_derby():
     assert not is_selected(m("Fenerbahçe", "Konyaspor"), WL)
 
 def test_pl_big6_only_between_big6():
+    assert is_selected(m("Chelsea", "Man Utd", "PL"), WL)
     assert not is_selected(m("Chelsea", "Burnley", "PL"), WL)
 
 def test_cl_rules():
-    assert is_selected(m("Real Madrid", "Bayern", "CL", "Quarter-finals"), WL)
-    assert not is_selected(m("Real Madrid", "Bayern", "CL", "League Stage - 3"), WL)
-    assert is_selected(m("Galatasaray", "Bayern", "CL", "League Stage - 3"), WL)
-    assert is_selected(m("Real Madrid", "Bayern", "CL", "League Stage - 3", channel="TRT 1"), WL)
+    assert is_selected(m("Real Madrid", "Bayern München", "CL", 13), WL)
+    assert not is_selected(m("Real Madrid", "Bayern München", "CL", 3), WL)
+    assert is_selected(m("Galatasaray", "Bayern München", "CL", 3), WL)
+    assert is_selected(m("Real Madrid", "Bayern München", "CL", 3, channel="TRT 1"), WL)
 
 def test_rules_off():
     off = Watchlist(teams=[], matches=[], rules={}, alerts_minutes=[60])

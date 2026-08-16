@@ -2,28 +2,35 @@ import logging, os, sys
 from pathlib import Path
 from src import config, fetch
 from src.ics import build_calendar
-from src.model import Match, parse_fixtures
+from src.model import Match, parse_feed
 from src.rules import Watchlist, is_selected, is_team
 
 log = logging.getLogger(__name__)
 
+def _key(name: str) -> str:
+    """Toleranslı eşleşme anahtarı: ilk kelimenin ilk 5 harfi ("bayern munchen"/"bayern munih" -> "bayer")."""
+    return name.split()[0][:5] if name else ""
+
+def _same_pair(m: Match, pair: tuple[str, str]) -> bool:
+    return _key(m.home_n) == _key(pair[0]) and _key(m.away_n) == _key(pair[1])
+
 def assign_channels(matches: list[Match], trt_pairs: set[tuple[str, str]]) -> None:
     for m in matches:
         m.channel = config.CHANNELS[m.league]
-        if m.league == "CL" and (m.home_n, m.away_n) in trt_pairs:
+        if m.league == "CL" and any(_same_pair(m, p) for p in trt_pairs):
             m.channel = config.TRT_CHANNEL
 
 def split(matches: list[Match]) -> tuple[list[Match], list[Match]]:
     bjk = [m for m in matches if is_team(m, "besiktas")]
-    futbol = [m for m in matches if m.league in config.FUTBOL_LEAGUES]
-    return bjk, futbol
+    return bjk, list(matches)
 
 def run(out_dir, watchlist_path: str, suffix: str) -> None:
-    key = os.environ["API_FOOTBALL_KEY"]
     wl = Watchlist.load(watchlist_path)
     matches: list[Match] = []
-    for lid, short in config.LEAGUES.items():
-        matches += parse_fixtures(fetch.fetch_league(lid, key), short)
+    for league in config.FEEDS:
+        data = fetch.fetch_feed(league)
+        if data is not None:
+            matches += parse_feed(data, league)
     assign_channels(matches, fetch.trt_cl_pairs())
     matches.sort(key=lambda m: m.start)
     bjk, futbol = split(matches)

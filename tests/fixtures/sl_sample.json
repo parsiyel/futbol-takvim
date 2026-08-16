@@ -1,10 +1,8 @@
-{"response": [
- {"fixture": {"id": 1001, "date": "2026-08-15T18:00:00+00:00", "status": {"short": "FT"}},
-  "league": {"id": 203, "round": "Regular Season - 2"},
-  "teams": {"home": {"name": "Besiktas"}, "away": {"name": "Galatasaray"}},
-  "goals": {"home": 2, "away": 1}},
- {"fixture": {"id": 1002, "date": "2026-08-22T16:00:00+00:00", "status": {"short": "NS"}},
-  "league": {"id": 203, "round": "Regular Season - 3"},
-  "teams": {"home": {"name": "Fenerbahçe"}, "away": {"name": "Beşiktaş"}},
-  "goals": {"home": null, "away": null}}
-]}
+[
+ {"MatchNumber": 7, "RoundNumber": 1, "DateUtc": "2026-08-14 18:30:00Z", "Location": "RAMS Park",
+  "HomeTeam": "Galatasaray", "AwayTeam": "Çorum", "Group": null, "HomeTeamScore": 2, "AwayTeamScore": 2},
+ {"MatchNumber": 3, "RoundNumber": 1, "DateUtc": "2026-08-16 18:30:00Z", "Location": "Tüpraş",
+  "HomeTeam": "Besiktas", "AwayTeam": "Kasimpasa", "Group": null, "HomeTeamScore": null, "AwayTeamScore": null},
+ {"MatchNumber": 12, "RoundNumber": 2, "DateUtc": "2026-08-22 16:00:00Z", "Location": "Kadıköy",
+  "HomeTeam": "Fenerbahçe", "AwayTeam": "Beşiktaş", "Group": null, "HomeTeamScore": null, "AwayTeamScore": null}
+]

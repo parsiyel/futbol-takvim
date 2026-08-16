@@ -43,7 +43,7 @@ def is_selected(match: Match, wl: Watchlist) -> bool:
     if match.league == "PL" and r.get("pl_big6") and _both_in(match, config.PL_BIG6):
         return True
     if match.league == "CL":
-        if r.get("cl_from_qf") and match.round.startswith(config.CL_KO_ROUNDS):
+        if r.get("cl_from_qf") and match.round >= config.CL_QF_ROUND:
             return True
         if r.get("cl_tr_teams") and any(_has(match, t) for t in config.TR_TEAMS):
             return True

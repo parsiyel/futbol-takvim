@@ -45,15 +45,23 @@ TRT yayın akışı ─┘   ▲           docs/futbol.ics
 
 ## Veri kaynağı
 
-API-Football (api-sports.io) ücretsiz plan, 100 istek/gün. Kullanılan uç:
-`GET /fixtures?league={id}&season={yıl}` — lig başına tek istek, sezonun tüm
-fikstürü. Günde 4 çalışma × 4 lig = 16 istek.
+**Güncelleme 2026-08-17:** API-Football ücretsiz planı mevcut sezonu vermiyor
+("Free plans do not have access to this season, try from 2022 to 2024"). ESPN'in
+açık API'si datacenter IP'lerini (GitHub Actions dahil) 403 ile engelliyor,
+TheSportsDB ücretsiz key sezon başına 5 maçla sınırlı. Seçilen kaynak:
 
-Lig ID'leri (API-Football): Süper Lig 203, Premier League 39, Şampiyonlar Ligi 2,
-Türkiye Kupası 206. Sezon: `2026`.
+**fixturedownload.com JSON feed** — key yok, `GET /feed/json/<slug>` sezonun tüm
+fikstürünü skorlarla verir. Slug'lar: `super-lig-2026` (306 maç), `epl-2026`
+(380 maç), `champions-league-2026` (kura çekimine kadar 404 → **opsiyonel**,
+yoksa uyarı verip atlanır). Alanlar: `MatchNumber`, `RoundNumber`, `DateUtc`,
+`HomeTeam`, `AwayTeam`, `HomeTeamScore`, `AwayTeamScore`. Bitmiş maç = skorlar
+dolu. UID: `{lig}-{MatchNumber}@futbol-takvim`.
 
-Risk: ücretsiz planın mevcut sezonu kapsadığı ilk çalışmada doğrulanacak;
-kapsamıyorsa yedek football-data.org (SL hariç) + TFF kazıma değerlendirilir.
+Takım adları kısa (`Man City`, `Man Utd`, `Spurs`); `PL_BIG6` ve `ALIASES` buna
+göre. ŞL tur numaraları: 1-8 lig aşaması, 9-10 play-off, 11-12 son 16, 13-14
+çeyrek, 15-16 yarı, 17 final; `cl_from_qf` = tur ≥ 13.
+
+**Türkiye Kupası kapsamdan çıkarıldı** — ücretsiz kaynak yok.
 
 ### Kanal bilgisi
 
@@ -66,9 +74,12 @@ API'de yok, kural ile eklenir:
 | Şampiyonlar Ligi | tabii; TRT'nin haftalık maçı ise `TRT 1` |
 | Türkiye Kupası | A Spor / TOD (best-effort) |
 
-TRT maçı: `https://www.trt1.com.tr/yayin-akisi` günlük sayfasından "Şampiyonlar
-Ligi" içeren satırların saat + takım adı eşleşmesi. Eşleşme bulunamazsa sessizce
-tabii yazılır; kazıma hatası çalışmayı durdurmaz.
+TRT maçı: `https://www.trt1.com.tr/yayin-akisi` sayfasındaki gömülü EPG JSON'unda
+`"title":"Ev - Dep | UEFA Şampiyonlar Ligi ..."` kalıbı. **Sayfa yalnızca bugünü
+ve geçmiş haftayı verir**, ileri tarih yok — dolayısıyla TRT etiketi ancak maç
+günü çalışmalarda (06/12/17) düşer. Takım adı eşleşmesi toleranslı (ilk kelimenin
+ilk 5 harfi: "bayern munih" ≈ "bayern munchen"). Eşleşme yoksa tabii yazılır;
+kazıma hatası çalışmayı durdurmaz. Türkiye Kupası satırı geçersiz (kapsam dışı).
 
 ## Çıktı: iki takvim
 

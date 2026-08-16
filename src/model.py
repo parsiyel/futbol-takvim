@@ -1,15 +1,15 @@
 import unicodedata
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 
 @dataclass
 class Match:
-    id: int
-    league: str          # "SL" | "PL" | "CL" | "TRCUP"
+    id: int              # feed MatchNumber (lig içinde benzersiz)
+    league: str          # "SL" | "PL" | "CL"
     home: str
     away: str
     start: datetime      # tz-aware (UTC)
-    round: str
+    round: int
     finished: bool
     score: str | None
     channel: str = ""    # generate.py doldurur
@@ -18,23 +18,26 @@ class Match:
     def home_n(self) -> str: return normalize(self.home)
     @property
     def away_n(self) -> str: return normalize(self.away)
+    @property
+    def uid(self) -> str: return f"{self.league}-{self.id}@futbol-takvim"
 
 def normalize(name: str) -> str:
-    s = unicodedata.normalize("NFKD", name)
+    s = name.replace("ı", "i").replace("I", "i")
+    s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c))
-    return s.replace("ı", "i").lower().strip()
+    return s.lower().strip()
 
-def parse_fixtures(data: dict, league: str) -> list[Match]:
+def parse_feed(items: list[dict], league: str) -> list[Match]:
+    """fixturedownload.com JSON feed -> Match listesi."""
     out = []
-    for item in data.get("response", []):
-        f, t, g = item["fixture"], item["teams"], item["goals"]
-        finished = f["status"]["short"] in ("FT", "AET", "PEN")
-        score = f"{g['home']}-{g['away']}" if finished and g["home"] is not None else None
+    for it in items:
+        hs, as_ = it.get("HomeTeamScore"), it.get("AwayTeamScore")
+        finished = hs is not None and as_ is not None
+        start = datetime.strptime(it["DateUtc"], "%Y-%m-%d %H:%M:%SZ").replace(tzinfo=timezone.utc)
         out.append(Match(
-            id=f["id"], league=league,
-            home=t["home"]["name"], away=t["away"]["name"],
-            start=datetime.fromisoformat(f["date"]),
-            round=item["league"].get("round", ""),
-            finished=finished, score=score,
+            id=int(it["MatchNumber"]), league=league,
+            home=it["HomeTeam"], away=it["AwayTeam"],
+            start=start, round=int(it["RoundNumber"]),
+            finished=finished, score=f"{hs}-{as_}" if finished else None,
         ))
     return out

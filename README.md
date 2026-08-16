@@ -11,8 +11,8 @@ Yayın kanalı etkinliğin "konum" alanında: `TOD`, `tabii`, `TRT 1`.
 
 ## Kurulum
 
-1. [api-sports.io](https://dashboard.api-football.com/register) ücretsiz hesap → API key →
-   repo Secrets: `API_FOOTBALL_KEY`. Ayrıca `ICS_SUFFIX` (rastgele kısa ek, URL gizliliği için).
+1. Repo Secrets: `ICS_SUFFIX` (rastgele kısa ek, URL gizliliği için). API key gerekmez —
+   veri [fixturedownload.com](https://fixturedownload.com) feed'inden gelir.
 2. Settings → Pages → Deploy from branch → `main` / `/docs`.
 3. Actions → `build-ics` → Run workflow. `docs/*.ics` oluşur.
 4. iPhone: Ayarlar → Takvim → Hesaplar → Hesap Ekle → Diğer → **Abone Olunan
@@ -45,13 +45,15 @@ Dosyayı GitHub uygulamasından düzenleyip push edince takvim ~2 dk içinde yen
 ## Çalışma
 
 GitHub Actions günde 4 kez (TR 06/12/17/21) + `watchlist.yml` değişince.
-API başarısız olursa eski `.ics` dosyaları korunur, Actions e-posta atar.
-Sezon değişince `src/config.py` → `SEASON`.
+Feed başarısız olursa eski `.ics` dosyaları korunur, Actions e-posta atar.
+Şampiyonlar Ligi feed'i (`champions-league-2026`) kura çekimine kadar yok; gelince
+otomatik dahil olur. TRT 1 etiketi yalnızca maç günü düşer (TRT sitesi ileri
+tarihli yayın akışı vermiyor). Sezon değişince `src/config.py` → `SEASON`.
 
 ## Lokal
 
 ```bash
 python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
 .venv/Scripts/pytest
-API_FOOTBALL_KEY=... ICS_SUFFIX=deneme python -m src.generate
+ICS_SUFFIX=deneme python -m src.generate
 ```

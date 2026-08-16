@@ -20,7 +20,6 @@ jobs:
       - run: python -m pytest -q
       - run: python -m src.generate
         env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           ICS_SUFFIX: ${{ secrets.ICS_SUFFIX }}
       - name: commit
         run: |
