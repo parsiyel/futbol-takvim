@@ -37,7 +37,7 @@ def run(out_dir, watchlist_path: str, suffix: str) -> None:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     try:
-        run(Path("docs"), "watchlist.yml", os.environ.get("ICS_SUFFIX", "x"))
+        run(Path("docs"), "watchlist.yml", os.environ.get("ICS_SUFFIX") or "x")
     except Exception as e:
         log.error("üretim başarısız, eski dosyalar korunuyor: %s", e)
         sys.exit(1)
