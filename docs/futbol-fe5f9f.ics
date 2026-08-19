@@ -32,25 +32,6 @@ DESCRIPTION:Süper Lig · 1. Hafta · TOD\nSkor: 2-1
 LOCATION:TOD
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🔔 ⚽ Trabzonspor – Ferencváros
-DTSTART;TZID=Europe/Istanbul:20260820T200000
-DTEND;TZID=Europe/Istanbul:20260820T220000
-DTSTAMP:20260820T170000Z
-UID:MANUAL-3@futbol-takvim
-DESCRIPTION:Avrupa Ligi Play-off\, ilk maç (Papara Park) · ATV
-LOCATION:ATV
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Trabzonspor – Ferencváros
-TRIGGER:-PT1H
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:⚽ Trabzonspor – Ferencváros
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:⚽ Erzurumspor – Galatasaray
 DTSTART;TZID=Europe/Istanbul:20260821T213000
 DTEND;TZID=Europe/Istanbul:20260821T233000
@@ -136,7 +117,7 @@ SUMMARY:🔔 ⚽ Lyon – Fenerbahçe
 DTSTART;TZID=Europe/Istanbul:20260826T220000
 DTEND;TZID=Europe/Istanbul:20260827T000000
 DTSTAMP:20260826T190000Z
-UID:MANUAL-4@futbol-takvim
+UID:MANUAL-3@futbol-takvim
 DESCRIPTION:Şampiyonlar Ligi Play-off\, rövanş (ilk maç 1-1) · TRT 1 
  (teyit edilmedi)
 LOCATION:TRT 1 (teyit edilmedi)
@@ -156,7 +137,7 @@ SUMMARY:🔔 ⚽ Ferencváros – Trabzonspor
 DTSTART;TZID=Europe/Istanbul:20260827T220000
 DTEND;TZID=Europe/Istanbul:20260828T000000
 DTSTAMP:20260827T190000Z
-UID:MANUAL-5@futbol-takvim
+UID:MANUAL-4@futbol-takvim
 DESCRIPTION:Avrupa Ligi Play-off\, rövanş (Budapeşte) · teyit edilmedi
 LOCATION:teyit edilmedi
 BEGIN:VALARM
@@ -944,21 +925,21 @@ DESCRIPTION:Premier League · 10. Hafta · TOD
 LOCATION:TOD
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚽ Alanyaspor – Trabzonspor
-DTSTART;TZID=Europe/Istanbul:20261108T000000
-DTEND;TZID=Europe/Istanbul:20261108T020000
-DTSTAMP:20261107T210000Z
-UID:SL-317876@futbol-takvim
-DESCRIPTION:Süper Lig · 11. Hafta · TOD\n⚠️ Saat henüz kesinleşme
- di
-LOCATION:TOD
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:⚽ Galatasaray – Amed Sportif Faaliyetler
 DTSTART;TZID=Europe/Istanbul:20261108T000000
 DTEND;TZID=Europe/Istanbul:20261108T020000
 DTSTAMP:20261107T210000Z
 UID:SL-317880@futbol-takvim
+DESCRIPTION:Süper Lig · 11. Hafta · TOD\n⚠️ Saat henüz kesinleşme
+ di
+LOCATION:TOD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Alanyaspor – Trabzonspor
+DTSTART;TZID=Europe/Istanbul:20261108T000000
+DTEND;TZID=Europe/Istanbul:20261108T020000
+DTSTAMP:20261107T210000Z
+UID:SL-317876@futbol-takvim
 DESCRIPTION:Süper Lig · 11. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
@@ -2240,21 +2221,21 @@ DESCRIPTION:Süper Lig · 22. Hafta · TOD\n⚠️ Saat henüz kesinleşme
 LOCATION:TOD
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚽ Trabzonspor – Konyaspor
-DTSTART;TZID=Europe/Istanbul:20270221T000000
-DTEND;TZID=Europe/Istanbul:20270221T020000
-DTSTAMP:20270220T210000Z
-UID:SL-317978@futbol-takvim
-DESCRIPTION:Süper Lig · 22. Hafta · TOD\n⚠️ Saat henüz kesinleşme
- di
-LOCATION:TOD
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:⚽ Kocaelispor – Galatasaray
 DTSTART;TZID=Europe/Istanbul:20270221T000000
 DTEND;TZID=Europe/Istanbul:20270221T020000
 DTSTAMP:20270220T210000Z
 UID:SL-317979@futbol-takvim
+DESCRIPTION:Süper Lig · 22. Hafta · TOD\n⚠️ Saat henüz kesinleşme
+ di
+LOCATION:TOD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Trabzonspor – Konyaspor
+DTSTART;TZID=Europe/Istanbul:20270221T000000
+DTEND;TZID=Europe/Istanbul:20270221T020000
+DTSTAMP:20270220T210000Z
+UID:SL-317978@futbol-takvim
 DESCRIPTION:Süper Lig · 22. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
