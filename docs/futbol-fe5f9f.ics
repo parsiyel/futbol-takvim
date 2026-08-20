@@ -2221,21 +2221,21 @@ DESCRIPTION:Süper Lig · 22. Hafta · TOD\n⚠️ Saat henüz kesinleşme
 LOCATION:TOD
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚽ Kocaelispor – Galatasaray
-DTSTART;TZID=Europe/Istanbul:20270221T000000
-DTEND;TZID=Europe/Istanbul:20270221T020000
-DTSTAMP:20270220T210000Z
-UID:SL-317979@futbol-takvim
-DESCRIPTION:Süper Lig · 22. Hafta · TOD\n⚠️ Saat henüz kesinleşme
- di
-LOCATION:TOD
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:⚽ Trabzonspor – Konyaspor
 DTSTART;TZID=Europe/Istanbul:20270221T000000
 DTEND;TZID=Europe/Istanbul:20270221T020000
 DTSTAMP:20270220T210000Z
 UID:SL-317978@futbol-takvim
+DESCRIPTION:Süper Lig · 22. Hafta · TOD\n⚠️ Saat henüz kesinleşme
+ di
+LOCATION:TOD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Kocaelispor – Galatasaray
+DTSTART;TZID=Europe/Istanbul:20270221T000000
+DTEND;TZID=Europe/Istanbul:20270221T020000
+DTSTAMP:20270220T210000Z
+UID:SL-317979@futbol-takvim
 DESCRIPTION:Süper Lig · 22. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
