@@ -925,21 +925,21 @@ DESCRIPTION:Premier League · 10. Hafta · TOD
 LOCATION:TOD
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚽ Galatasaray – Amed Sportif Faaliyetler
-DTSTART;TZID=Europe/Istanbul:20261108T000000
-DTEND;TZID=Europe/Istanbul:20261108T020000
-DTSTAMP:20261107T210000Z
-UID:SL-317880@futbol-takvim
-DESCRIPTION:Süper Lig · 11. Hafta · TOD\n⚠️ Saat henüz kesinleşme
- di
-LOCATION:TOD
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:⚽ Alanyaspor – Trabzonspor
 DTSTART;TZID=Europe/Istanbul:20261108T000000
 DTEND;TZID=Europe/Istanbul:20261108T020000
 DTSTAMP:20261107T210000Z
 UID:SL-317876@futbol-takvim
+DESCRIPTION:Süper Lig · 11. Hafta · TOD\n⚠️ Saat henüz kesinleşme
+ di
+LOCATION:TOD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Galatasaray – Amed Sportif Faaliyetler
+DTSTART;TZID=Europe/Istanbul:20261108T000000
+DTEND;TZID=Europe/Istanbul:20261108T020000
+DTSTAMP:20261107T210000Z
+UID:SL-317880@futbol-takvim
 DESCRIPTION:Süper Lig · 11. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
