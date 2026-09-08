@@ -3627,21 +3627,21 @@ DESCRIPTION:Süper Lig · 14. Hafta · TOD\n⚠️ Saat henüz kesinleşme
 LOCATION:TOD
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚽ Galatasaray – Rizespor
-DTSTART;TZID=Europe/Istanbul:20261206T000000
-DTEND;TZID=Europe/Istanbul:20261206T020000
-DTSTAMP:20261205T210000Z
-UID:SL-317907@futbol-takvim
-DESCRIPTION:Süper Lig · 14. Hafta · TOD\n⚠️ Saat henüz kesinleşme
- di
-LOCATION:TOD
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:⚽ İstanbul Başakşehir – Fenerbahçe
 DTSTART;TZID=Europe/Istanbul:20261206T000000
 DTEND;TZID=Europe/Istanbul:20261206T020000
 DTSTAMP:20261205T210000Z
 UID:SL-317903@futbol-takvim
+DESCRIPTION:Süper Lig · 14. Hafta · TOD\n⚠️ Saat henüz kesinleşme
+ di
+LOCATION:TOD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Galatasaray – Rizespor
+DTSTART;TZID=Europe/Istanbul:20261206T000000
+DTEND;TZID=Europe/Istanbul:20261206T020000
+DTSTAMP:20261205T210000Z
+UID:SL-317907@futbol-takvim
 DESCRIPTION:Süper Lig · 14. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
