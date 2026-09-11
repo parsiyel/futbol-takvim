@@ -459,7 +459,8 @@ DTSTART;TZID=Europe/Istanbul:20260910T194500
 DTEND;TZID=Europe/Istanbul:20260910T214500
 DTSTAMP:20260910T164500Z
 UID:CL-85@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -468,7 +469,8 @@ DTSTART;TZID=Europe/Istanbul:20260910T194500
 DTEND;TZID=Europe/Istanbul:20260910T214500
 DTSTAMP:20260910T164500Z
 UID:CL-86@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · TRT 1
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · TRT 1\nSkor: 1-
+ 1
 LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -487,7 +489,8 @@ DTSTART;TZID=Europe/Istanbul:20260910T220000
 DTEND;TZID=Europe/Istanbul:20260911T000000
 DTSTAMP:20260910T190000Z
 UID:CL-87@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 5-
+ 0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -496,7 +499,8 @@ DTSTART;TZID=Europe/Istanbul:20260910T220000
 DTEND;TZID=Europe/Istanbul:20260911T000000
 DTSTAMP:20260910T190000Z
 UID:CL-88@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 4-
+ 0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -505,7 +509,8 @@ DTSTART;TZID=Europe/Istanbul:20260910T220000
 DTEND;TZID=Europe/Istanbul:20260911T000000
 DTSTAMP:20260910T190000Z
 UID:CL-89@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 2-
+ 3
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -514,7 +519,8 @@ DTSTART;TZID=Europe/Istanbul:20260910T220000
 DTEND;TZID=Europe/Istanbul:20260911T000000
 DTSTAMP:20260910T190000Z
 UID:CL-90@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 4-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
