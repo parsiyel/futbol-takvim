@@ -429,9 +429,9 @@ DTSTART;TZID=Europe/Istanbul:20260909T220000
 DTEND;TZID=Europe/Istanbul:20260910T000000
 DTSTAMP:20260909T190000Z
 UID:CL-83@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · TRT 1\nSkor: 3-
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 3-
  1
-LOCATION:TRT 1
+LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Sporting CP – Galatasaray
@@ -469,9 +469,9 @@ DTSTART;TZID=Europe/Istanbul:20260910T194500
 DTEND;TZID=Europe/Istanbul:20260910T214500
 DTSTAMP:20260910T164500Z
 UID:CL-86@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · TRT 1\nSkor: 1-
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-
  1
-LOCATION:TRT 1
+LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Fenerbahçe – Roma
