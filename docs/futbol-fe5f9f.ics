@@ -692,7 +692,7 @@ DTSTART;TZID=Europe/Istanbul:20260917T194500
 DTEND;TZID=Europe/Istanbul:20260917T214500
 DTSTAMP:20260917T164500Z
 UID:EL-82@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 2-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -701,7 +701,7 @@ DTSTART;TZID=Europe/Istanbul:20260917T194500
 DTEND;TZID=Europe/Istanbul:20260917T214500
 DTSTAMP:20260917T164500Z
 UID:EL-83@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 0-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -710,7 +710,7 @@ DTSTART;TZID=Europe/Istanbul:20260917T220000
 DTEND;TZID=Europe/Istanbul:20260918T000000
 DTSTAMP:20260917T190000Z
 UID:EL-84@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 5-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -719,7 +719,7 @@ DTSTART;TZID=Europe/Istanbul:20260917T220000
 DTEND;TZID=Europe/Istanbul:20260918T000000
 DTSTAMP:20260917T190000Z
 UID:EL-85@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -728,7 +728,7 @@ DTSTART;TZID=Europe/Istanbul:20260917T220000
 DTEND;TZID=Europe/Istanbul:20260918T000000
 DTSTAMP:20260917T190000Z
 UID:EL-86@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 0-3
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -737,7 +737,7 @@ DTSTART;TZID=Europe/Istanbul:20260917T220000
 DTEND;TZID=Europe/Istanbul:20260918T000000
 DTSTAMP:20260917T190000Z
 UID:EL-87@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-3
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -746,7 +746,7 @@ DTSTART;TZID=Europe/Istanbul:20260917T220000
 DTEND;TZID=Europe/Istanbul:20260918T000000
 DTSTAMP:20260917T190000Z
 UID:EL-88@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 4-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -755,7 +755,7 @@ DTSTART;TZID=Europe/Istanbul:20260917T220000
 DTEND;TZID=Europe/Istanbul:20260918T000000
 DTSTAMP:20260917T190000Z
 UID:EL-90@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
