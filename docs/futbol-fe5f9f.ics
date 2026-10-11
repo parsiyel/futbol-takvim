@@ -1010,8 +1010,8 @@ DTSTART;TZID=Europe/Istanbul:20261013T220000
 DTEND;TZID=Europe/Istanbul:20261014T000000
 DTSTAMP:20261013T190000Z
 UID:CL-98@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii
-LOCATION:tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · TRT 1
+LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Galatasaray – Barcelona
@@ -1074,8 +1074,8 @@ DTSTART;TZID=Europe/Istanbul:20261014T220000
 DTEND;TZID=Europe/Istanbul:20261015T000000
 DTSTAMP:20261014T190000Z
 UID:CL-104@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii
-LOCATION:tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · TRT 1
+LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Aston Villa – Fenerbahçe
