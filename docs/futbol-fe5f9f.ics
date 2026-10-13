@@ -6633,21 +6633,21 @@ DESCRIPTION:Premier League · 34. Hafta · TOD
 LOCATION:TOD
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:⚽ Fenerbahçe – İstanbul Başakşehir
-DTSTART;TZID=Europe/Istanbul:20270502T000000
-DTEND;TZID=Europe/Istanbul:20270502T020000
-DTSTAMP:20270501T210000Z
-UID:SL-318056@futbol-takvim
-DESCRIPTION:Süper Lig · 31. Hafta · TOD\n⚠️ Saat henüz kesinleşme
- di
-LOCATION:TOD
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:⚽ Çorum – Trabzonspor
 DTSTART;TZID=Europe/Istanbul:20270502T000000
 DTEND;TZID=Europe/Istanbul:20270502T020000
 DTSTAMP:20270501T210000Z
 UID:SL-318054@futbol-takvim
+DESCRIPTION:Süper Lig · 31. Hafta · TOD\n⚠️ Saat henüz kesinleşme
+ di
+LOCATION:TOD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:⚽ Fenerbahçe – İstanbul Başakşehir
+DTSTART;TZID=Europe/Istanbul:20270502T000000
+DTEND;TZID=Europe/Istanbul:20270502T020000
+DTSTAMP:20270501T210000Z
+UID:SL-318056@futbol-takvim
 DESCRIPTION:Süper Lig · 31. Hafta · TOD\n⚠️ Saat henüz kesinleşme
  di
 LOCATION:TOD
