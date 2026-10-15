@@ -1047,7 +1047,8 @@ DTSTART;TZID=Europe/Istanbul:20261014T194500
 DTEND;TZID=Europe/Istanbul:20261014T214500
 DTSTAMP:20261014T164500Z
 UID:CL-100@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 3-
+ 2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1056,7 +1057,8 @@ DTSTART;TZID=Europe/Istanbul:20261014T194500
 DTEND;TZID=Europe/Istanbul:20261014T214500
 DTSTAMP:20261014T164500Z
 UID:CL-101@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 3-
+ 6
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1065,7 +1067,8 @@ DTSTART;TZID=Europe/Istanbul:20261014T220000
 DTEND;TZID=Europe/Istanbul:20261015T000000
 DTSTAMP:20261014T190000Z
 UID:CL-102@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 2-
+ 4
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1074,7 +1077,8 @@ DTSTART;TZID=Europe/Istanbul:20261014T220000
 DTEND;TZID=Europe/Istanbul:20261015T000000
 DTSTAMP:20261014T190000Z
 UID:CL-103@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 3-
+ 4
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1083,7 +1087,8 @@ DTSTART;TZID=Europe/Istanbul:20261014T220000
 DTEND;TZID=Europe/Istanbul:20261015T000000
 DTSTAMP:20261014T190000Z
 UID:CL-104@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · TRT 1
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · TRT 1\nSkor: 6-
+ 0
 LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1102,7 +1107,8 @@ DTSTART;TZID=Europe/Istanbul:20261014T220000
 DTEND;TZID=Europe/Istanbul:20261015T000000
 DTSTAMP:20261014T190000Z
 UID:CL-105@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 3-
+ 2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1111,7 +1117,8 @@ DTSTART;TZID=Europe/Istanbul:20261014T220000
 DTEND;TZID=Europe/Istanbul:20261015T000000
 DTSTAMP:20261014T190000Z
 UID:CL-106@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 1-
+ 0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1120,7 +1127,8 @@ DTSTART;TZID=Europe/Istanbul:20261014T220000
 DTEND;TZID=Europe/Istanbul:20261015T000000
 DTSTAMP:20261014T190000Z
 UID:CL-107@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 3-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1129,7 +1137,8 @@ DTSTART;TZID=Europe/Istanbul:20261014T220000
 DTEND;TZID=Europe/Istanbul:20261015T000000
 DTSTAMP:20261014T190000Z
 UID:CL-108@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 0-
+ 3
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
