@@ -252,7 +252,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:EL-107@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 2-3
 LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY

@@ -1147,7 +1147,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:EL-91@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 3-2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1156,7 +1156,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:EL-92@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 2-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1165,7 +1165,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:EL-93@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 1-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1174,7 +1174,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:EL-94@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 0-4
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1183,7 +1183,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:EL-95@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 1-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1192,7 +1192,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:EL-96@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 0-4
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1201,7 +1201,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:EL-97@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 0-3
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1210,7 +1210,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:EL-98@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 1-2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1219,7 +1219,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:UECL-55@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1228,7 +1228,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:UECL-56@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 2-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1237,7 +1237,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:UECL-57@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 3-2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1246,7 +1246,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:UECL-58@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 2-4
 LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1265,7 +1265,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:UECL-59@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1274,7 +1274,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:UECL-60@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1283,7 +1283,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:UECL-61@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 2-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1292,7 +1292,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:UECL-62@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1301,7 +1301,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:UECL-63@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 2-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1310,7 +1310,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T194500
 DTEND;TZID=Europe/Istanbul:20261015T214500
 DTSTAMP:20261015T164500Z
 UID:UECL-64@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1319,7 +1319,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:EL-99@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 4-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1328,7 +1328,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:EL-100@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 0-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1337,7 +1337,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:EL-101@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 2-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1346,7 +1346,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:EL-102@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 1-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1355,7 +1355,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:EL-103@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 2-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1364,7 +1364,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:EL-104@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 3-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1373,7 +1373,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:EL-105@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 3-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1382,7 +1382,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:EL-106@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 1-2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1391,7 +1391,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:EL-108@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 2. Hafta · tabii\nSkor: 1-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1400,7 +1400,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:UECL-65@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 3-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1409,7 +1409,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:UECL-66@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 3-2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1418,7 +1418,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:UECL-67@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 3-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1427,7 +1427,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:UECL-68@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 4-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1436,7 +1436,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:UECL-69@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1445,7 +1445,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:UECL-70@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 2-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1454,7 +1454,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:UECL-71@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 2-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1463,7 +1463,7 @@ DTSTART;TZID=Europe/Istanbul:20261015T220000
 DTEND;TZID=Europe/Istanbul:20261016T000000
 DTSTAMP:20261015T190000Z
 UID:UECL-72@futbol-takvim
-DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii
+DESCRIPTION:Konferans Ligi · Lig Aşaması 1. Hafta · tabii\nSkor: 1-1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
