@@ -1553,8 +1553,8 @@ DTSTART;TZID=Europe/Istanbul:20261020T194500
 DTEND;TZID=Europe/Istanbul:20261020T214500
 DTSTAMP:20261020T164500Z
 UID:CL-109@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii
-LOCATION:tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · TRT 1
+LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Fenerbahçe – Slavia Praha
@@ -1644,8 +1644,8 @@ DTSTART;TZID=Europe/Istanbul:20261021T194500
 DTEND;TZID=Europe/Istanbul:20261021T214500
 DTSTAMP:20261021T164500Z
 UID:CL-118@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii
-LOCATION:tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · TRT 1
+LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Lille – Galatasaray
