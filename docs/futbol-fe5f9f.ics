@@ -1653,7 +1653,8 @@ DTSTART;TZID=Europe/Istanbul:20261021T194500
 DTEND;TZID=Europe/Istanbul:20261021T214500
 DTSTAMP:20261021T164500Z
 UID:CL-118@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · TRT 1
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · TRT 1\nSkor: 2-
+ 4
 LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1672,7 +1673,8 @@ DTSTART;TZID=Europe/Istanbul:20261021T194500
 DTEND;TZID=Europe/Istanbul:20261021T214500
 DTSTAMP:20261021T164500Z
 UID:CL-119@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 4-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1681,7 +1683,8 @@ DTSTART;TZID=Europe/Istanbul:20261021T220000
 DTEND;TZID=Europe/Istanbul:20261022T000000
 DTSTAMP:20261021T190000Z
 UID:CL-120@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 2-
+ 2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1690,7 +1693,8 @@ DTSTART;TZID=Europe/Istanbul:20261021T220000
 DTEND;TZID=Europe/Istanbul:20261022T000000
 DTSTAMP:20261021T190000Z
 UID:CL-121@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 4-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1699,7 +1703,8 @@ DTSTART;TZID=Europe/Istanbul:20261021T220000
 DTEND;TZID=Europe/Istanbul:20261022T000000
 DTSTAMP:20261021T190000Z
 UID:CL-122@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 1-
+ 0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1708,7 +1713,8 @@ DTSTART;TZID=Europe/Istanbul:20261021T220000
 DTEND;TZID=Europe/Istanbul:20261022T000000
 DTSTAMP:20261021T190000Z
 UID:CL-123@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 2-
+ 3
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1717,7 +1723,8 @@ DTSTART;TZID=Europe/Istanbul:20261021T220000
 DTEND;TZID=Europe/Istanbul:20261022T000000
 DTSTAMP:20261021T190000Z
 UID:CL-124@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 3-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1726,7 +1733,8 @@ DTSTART;TZID=Europe/Istanbul:20261021T220000
 DTEND;TZID=Europe/Istanbul:20261022T000000
 DTSTAMP:20261021T190000Z
 UID:CL-125@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 3-
+ 0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -1735,7 +1743,8 @@ DTSTART;TZID=Europe/Istanbul:20261021T220000
 DTEND;TZID=Europe/Istanbul:20261022T000000
 DTSTAMP:20261021T190000Z
 UID:CL-126@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 1-
+ 0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
