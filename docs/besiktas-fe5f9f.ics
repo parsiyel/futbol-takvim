@@ -300,7 +300,7 @@ DTSTART;TZID=Europe/Istanbul:20261022T220000
 DTEND;TZID=Europe/Istanbul:20261023T000000
 DTSTAMP:20261022T190000Z
 UID:EL-125@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 3. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 2-2
 LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY
