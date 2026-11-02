@@ -1553,9 +1553,9 @@ DTSTART;TZID=Europe/Istanbul:20261020T194500
 DTEND;TZID=Europe/Istanbul:20261020T214500
 DTSTAMP:20261020T164500Z
 UID:CL-109@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · TRT 1\nSkor: 2-
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 2-
  2
-LOCATION:TRT 1
+LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Fenerbahçe – Slavia Praha
@@ -1653,9 +1653,9 @@ DTSTART;TZID=Europe/Istanbul:20261021T194500
 DTEND;TZID=Europe/Istanbul:20261021T214500
 DTSTAMP:20261021T164500Z
 UID:CL-118@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · TRT 1\nSkor: 2-
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 3. Hafta · tabii\nSkor: 2-
  4
-LOCATION:TRT 1
+LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Lille – Galatasaray
@@ -2271,8 +2271,8 @@ DTSTART;TZID=Europe/Istanbul:20261103T204500
 DTEND;TZID=Europe/Istanbul:20261103T224500
 DTSTAMP:20261103T174500Z
 UID:CL-128@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii
-LOCATION:tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · TRT 1
+LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Galatasaray – Stuttgart
@@ -2362,8 +2362,8 @@ DTSTART;TZID=Europe/Istanbul:20261104T204500
 DTEND;TZID=Europe/Istanbul:20261104T224500
 DTSTAMP:20261104T174500Z
 UID:CL-136@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii
-LOCATION:tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · TRT 1
+LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Fenerbahçe – Liverpool
