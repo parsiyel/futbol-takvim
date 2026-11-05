@@ -2362,7 +2362,7 @@ DTSTART;TZID=Europe/Istanbul:20261104T183000
 DTEND;TZID=Europe/Istanbul:20261104T203000
 DTSTAMP:20261104T153000Z
 UID:EL-130@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 4. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 0-0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -2371,7 +2371,8 @@ DTSTART;TZID=Europe/Istanbul:20261104T204500
 DTEND;TZID=Europe/Istanbul:20261104T224500
 DTSTAMP:20261104T174500Z
 UID:CL-136@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · TRT 1
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · TRT 1\nSkor: 3-
+ 2
 LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2390,7 +2391,8 @@ DTSTART;TZID=Europe/Istanbul:20261104T204500
 DTEND;TZID=Europe/Istanbul:20261104T224500
 DTSTAMP:20261104T174500Z
 UID:CL-137@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 2-
+ 3
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -2399,7 +2401,8 @@ DTSTART;TZID=Europe/Istanbul:20261104T230000
 DTEND;TZID=Europe/Istanbul:20261105T010000
 DTSTAMP:20261104T200000Z
 UID:CL-138@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 2-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -2408,7 +2411,8 @@ DTSTART;TZID=Europe/Istanbul:20261104T230000
 DTEND;TZID=Europe/Istanbul:20261105T010000
 DTSTAMP:20261104T200000Z
 UID:CL-139@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 4-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -2417,7 +2421,8 @@ DTSTART;TZID=Europe/Istanbul:20261104T230000
 DTEND;TZID=Europe/Istanbul:20261105T010000
 DTSTAMP:20261104T200000Z
 UID:CL-140@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 1-
+ 2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -2426,7 +2431,8 @@ DTSTART;TZID=Europe/Istanbul:20261104T230000
 DTEND;TZID=Europe/Istanbul:20261105T010000
 DTSTAMP:20261104T200000Z
 UID:CL-141@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 2-
+ 3
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -2435,7 +2441,8 @@ DTSTART;TZID=Europe/Istanbul:20261104T230000
 DTEND;TZID=Europe/Istanbul:20261105T010000
 DTSTAMP:20261104T200000Z
 UID:CL-142@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 1-
+ 2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -2444,7 +2451,8 @@ DTSTART;TZID=Europe/Istanbul:20261104T230000
 DTEND;TZID=Europe/Istanbul:20261105T010000
 DTSTAMP:20261104T200000Z
 UID:CL-143@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 1-
+ 9
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -2453,7 +2461,8 @@ DTSTART;TZID=Europe/Istanbul:20261104T230000
 DTEND;TZID=Europe/Istanbul:20261105T010000
 DTSTAMP:20261104T200000Z
 UID:CL-144@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 4-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
