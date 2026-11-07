@@ -372,7 +372,7 @@ DTSTART;TZID=Europe/Istanbul:20261105T230000
 DTEND;TZID=Europe/Istanbul:20261106T010000
 DTSTAMP:20261105T200000Z
 UID:EL-139@futbol-takvim
-DESCRIPTION:Avrupa Ligi · Lig Aşaması 4. Hafta · tabii
+DESCRIPTION:Avrupa Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 3-2
 LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY
