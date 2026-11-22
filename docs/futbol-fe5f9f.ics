@@ -2272,9 +2272,9 @@ DTSTART;TZID=Europe/Istanbul:20261103T204500
 DTEND;TZID=Europe/Istanbul:20261103T224500
 DTSTAMP:20261103T174500Z
 UID:CL-128@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · TRT 1\nSkor: 2-
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 2-
  0
-LOCATION:TRT 1
+LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Galatasaray – Stuttgart
@@ -2371,9 +2371,9 @@ DTSTART;TZID=Europe/Istanbul:20261104T204500
 DTEND;TZID=Europe/Istanbul:20261104T224500
 DTSTAMP:20261104T174500Z
 UID:CL-136@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · TRT 1\nSkor: 3-
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 4. Hafta · tabii\nSkor: 3-
  2
-LOCATION:TRT 1
+LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Fenerbahçe – Liverpool
@@ -2931,7 +2931,7 @@ DTSTART;TZID=Europe/Istanbul:20261122T190000
 DTEND;TZID=Europe/Istanbul:20261122T210000
 DTSTAMP:20261122T160000Z
 UID:SL-317883@futbol-takvim
-DESCRIPTION:Süper Lig · 12. Hafta · TOD
+DESCRIPTION:Süper Lig · 12. Hafta · TOD\nSkor: 1-0
 LOCATION:TOD
 END:VEVENT
 BEGIN:VEVENT
@@ -2968,8 +2968,8 @@ DTSTART;TZID=Europe/Istanbul:20261124T204500
 DTEND;TZID=Europe/Istanbul:20261124T224500
 DTSTAMP:20261124T174500Z
 UID:CL-2@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii
-LOCATION:tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · TRT 1
+LOCATION:TRT 1
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:⚽ Galatasaray – Aston Villa
