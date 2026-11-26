@@ -3059,7 +3059,8 @@ DTSTART;TZID=Europe/Istanbul:20261125T204500
 DTEND;TZID=Europe/Istanbul:20261125T224500
 DTSTAMP:20261125T174500Z
 UID:CL-10@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii\nSkor: 0-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -3068,7 +3069,8 @@ DTSTART;TZID=Europe/Istanbul:20261125T204500
 DTEND;TZID=Europe/Istanbul:20261125T224500
 DTSTAMP:20261125T174500Z
 UID:CL-11@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii\nSkor: 1-
+ 4
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -3077,7 +3079,8 @@ DTSTART;TZID=Europe/Istanbul:20261125T230000
 DTEND;TZID=Europe/Istanbul:20261126T010000
 DTSTAMP:20261125T200000Z
 UID:CL-12@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii\nSkor: 2-
+ 2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -3086,7 +3089,8 @@ DTSTART;TZID=Europe/Istanbul:20261125T230000
 DTEND;TZID=Europe/Istanbul:20261126T010000
 DTSTAMP:20261125T200000Z
 UID:CL-13@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii\nSkor: 2-
+ 0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -3095,7 +3099,8 @@ DTSTART;TZID=Europe/Istanbul:20261125T230000
 DTEND;TZID=Europe/Istanbul:20261126T010000
 DTSTAMP:20261125T200000Z
 UID:CL-14@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii\nSkor: 2-
+ 0
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -3104,7 +3109,8 @@ DTSTART;TZID=Europe/Istanbul:20261125T230000
 DTEND;TZID=Europe/Istanbul:20261126T010000
 DTSTAMP:20261125T200000Z
 UID:CL-15@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii\nSkor: 2-
+ 2
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -3113,7 +3119,8 @@ DTSTART;TZID=Europe/Istanbul:20261125T230000
 DTEND;TZID=Europe/Istanbul:20261126T010000
 DTSTAMP:20261125T200000Z
 UID:CL-16@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii\nSkor: 0-
+ 3
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -3122,7 +3129,8 @@ DTSTART;TZID=Europe/Istanbul:20261125T230000
 DTEND;TZID=Europe/Istanbul:20261126T010000
 DTSTAMP:20261125T200000Z
 UID:CL-17@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii\nSkor: 2-
+ 1
 LOCATION:tabii
 END:VEVENT
 BEGIN:VEVENT
@@ -3131,7 +3139,8 @@ DTSTART;TZID=Europe/Istanbul:20261125T230000
 DTEND;TZID=Europe/Istanbul:20261126T010000
 DTSTAMP:20261125T200000Z
 UID:CL-18@futbol-takvim
-DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii
+DESCRIPTION:Şampiyonlar Ligi · Lig Aşaması 5. Hafta · tabii\nSkor: 0-
+ 1
 LOCATION:tabii
 BEGIN:VALARM
 ACTION:DISPLAY
